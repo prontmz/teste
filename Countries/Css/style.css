@@ -1,4 +1,13 @@
-/* Adicione isso no início do seu CSS */
+
+:root {
+    --primary: #00754a;
+    --secondary: #ffb81c;
+    --dark: #1e3932;
+    --light: #f1f8f6;
+    --text: #333333;
+    --white: #ffffff;
+    --gray: #f7f7f7;
+}/* Adicione isso no início do seu CSS */
 html {
     font-size: 16px;
 }
