@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM totalmente carregado e analisado');
+
+    // ============ BARRA DE PESQUISA ============
     // Mapeamento de países - ATUALIZE COM SEUS CAMINHOS REAIS
     const countryPages = {
         // Africa AUSTRAL:
@@ -6,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
         'Angola':'Countries/Angola.html',
         'áfrica do sul': 'Countries/africa do sul.html',
         'botswana':'Countries/Botswana.html',
-         'Congo':'Countries/Republica Democratica do Congo.html ',
+        'Congo':'Countries/Republica Democratica do Congo.html ',
         'Eswatini':'Countries/Eswatini.html',
         'Lesoto':'Countries/Lesoto.html',
-         'mocambique': 'Countries/mocambique.html',
+        'mocambique': 'Countries/mocambique.html',
         'Malawi':'Countries/Malawi.html',
         'madagascar':'Countries/Madagascar.html',
         'Mauricias':'Countries/Mauricias.html',
-         'namibia':'Countries/Namibia.html',
+        'namibia':'Countries/Namibia.html',
         'Republica Democratica do Congo':'Countries/Republica Democratica do Congo.html',
         'RDCongo':'Countries/Republica Democratica do Congo.html',
         'Seychelles':'Countries/Seychelles.html',
@@ -31,7 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função principal de busca
     function handleSearch() {
+        console.log('Função de busca acionada');
         const searchInput = document.getElementById('country-search');
+        
+        if (!searchInput) {
+            console.error('Elemento de pesquisa não encontrado');
+            alert('Erro no sistema de pesquisa. Por favor, recarregue a página.');
+            return;
+        }
+
         const searchTerm = normalizeText(searchInput.value);
         
         if (!searchTerm) {
@@ -60,15 +71,26 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('País não encontrado. Tente: ' + Object.keys(countryPages).join(', '));
     }
 
-    // Event Listeners
-    document.getElementById('search-btn').addEventListener('click', handleSearch);
-    document.getElementById('country-search').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            handleSearch();
-        }
-    });
+    // Configuração dos event listeners com verificação
+    const searchBtn = document.getElementById('search-btn');
+    const searchInputField = document.getElementById('country-search');
 
-    // Carrossel (código existente)
+    if (searchBtn && searchInputField) {
+        console.log('Elementos de pesquisa encontrados, adicionando event listeners');
+        searchBtn.addEventListener('click', handleSearch);
+        searchInputField.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch();
+            }
+        });
+    } else {
+        console.error('Elementos de pesquisa não encontrados:', {
+            searchBtn,
+            searchInputField
+        });
+    }
+
+    // ============ CARROSSEL ============
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-item');
     const totalSlides = slides.length;
@@ -83,112 +105,116 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide);
     }
     
-    setInterval(nextSlide, 5000);
-    
-    // Menu mobile (código existente)
+    if (slides.length > 0) {
+        showSlide(currentSlide);
+        setInterval(nextSlide, 5000);
+    }
+
+    // ============ MENU MOBILE ============
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-    
-    // Efeito de scroll na navbar (código existente)
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // ============ EFEITO SCROLL NAVBAR ============
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         }
     });
 
+    // ============ MODAIS E COOKIES ============
+    // Elementos
+    const privacyModal = document.getElementById('privacyModal');
+    const termsModal = document.getElementById('termsModal');
+    const disclaimerModal = document.getElementById('disclaimerModal');
+    const privacyLink = document.getElementById('privacyLink');
+    const termsLink = document.getElementById('termsLink');
+    const footerPrivacyLink = document.getElementById('footerPrivacyLink');
+    const footerTermsLink = document.getElementById('footerTermsLink');
+    const footerDisclaimerLink = document.getElementById('footerDisclaimerLink');
+    const closeButtons = document.querySelectorAll('.close-modal');
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptCookies = document.getElementById('acceptCookies');
+    const rejectCookies = document.getElementById('rejectCookies');
+    const learnMoreCookies = document.getElementById('learnMoreCookies');
 
-        // Elementos
-        const privacyModal = document.getElementById('privacyModal');
-        const termsModal = document.getElementById('termsModal');
-        const disclaimerModal = document.getElementById('disclaimerModal');
-        const privacyLink = document.getElementById('privacyLink');
-        const termsLink = document.getElementById('termsLink');
-        const footerPrivacyLink = document.getElementById('footerPrivacyLink');
-        const footerTermsLink = document.getElementById('footerTermsLink');
-        const footerDisclaimerLink = document.getElementById('footerDisclaimerLink');
-        const closeButtons = document.querySelectorAll('.close-modal');
-        const cookieConsent = document.getElementById('cookieConsent');
-        const acceptCookies = document.getElementById('acceptCookies');
-        const rejectCookies = document.getElementById('rejectCookies');
-        const learnMoreCookies = document.getElementById('learnMoreCookies');
+    // Verificar consentimento de cookies
+    if (cookieConsent && !localStorage.getItem('cookieConsent')) {
+        cookieConsent.style.display = 'block';
+    }
 
-        // Verificar consentimento de cookies
-        if (!localStorage.getItem('cookieConsent')) {
-          cookieConsent.style.display = 'block';
-        }
-
-        // Aceitar cookies
+    // Aceitar cookies
+    if (acceptCookies) {
         acceptCookies.addEventListener('click', function() {
-          localStorage.setItem('cookieConsent', 'accepted');
-          cookieConsent.style.display = 'none';
+            localStorage.setItem('cookieConsent', 'accepted');
+            if (cookieConsent) cookieConsent.style.display = 'none';
         });
+    }
 
-        // Rejeitar cookies
+    // Rejeitar cookies
+    if (rejectCookies) {
         rejectCookies.addEventListener('click', function() {
-          localStorage.setItem('cookieConsent', 'rejected');
-          cookieConsent.style.display = 'none';
-          // Aqui você pode adicionar código para desativar cookies não essenciais
+            localStorage.setItem('cookieConsent', 'rejected');
+            if (cookieConsent) cookieConsent.style.display = 'none';
         });
+    }
 
-        // Saiba mais sobre cookies
+    // Saiba mais sobre cookies
+    if (learnMoreCookies) {
         learnMoreCookies.addEventListener('click', function(e) {
-          e.preventDefault();
-          cookieConsent.style.display = 'none';
-          privacyModal.style.display = 'block';
+            e.preventDefault();
+            if (cookieConsent) cookieConsent.style.display = 'none';
+            if (privacyModal) privacyModal.style.display = 'block';
         });
+    }
 
-        // Abrir modais
-        privacyLink.addEventListener('click', function(e) {
-          e.preventDefault();
-          privacyModal.style.display = 'block';
-        });
+    // Abrir modais com verificação de elementos
+    function setupModal(linkElement, modalElement) {
+        if (linkElement && modalElement) {
+            linkElement.addEventListener('click', function(e) {
+                e.preventDefault();
+                modalElement.style.display = 'block';
+            });
+        }
+    }
 
-        termsLink.addEventListener('click', function(e) {
-          e.preventDefault();
-          termsModal.style.display = 'block';
-        });
+    setupModal(privacyLink, privacyModal);
+    setupModal(termsLink, termsModal);
+    setupModal(footerPrivacyLink, privacyModal);
+    setupModal(footerTermsLink, termsModal);
+    setupModal(footerDisclaimerLink, disclaimerModal);
 
-        footerPrivacyLink.addEventListener('click', function(e) {
-          e.preventDefault();
-          privacyModal.style.display = 'block';
-        });
-
-        footerTermsLink.addEventListener('click', function(e) {
-          e.preventDefault();
-          termsModal.style.display = 'block';
-        });
-
-        footerDisclaimerLink.addEventListener('click', function(e) {
-          e.preventDefault();
-          disclaimerModal.style.display = 'block';
-        });
-
-        // Fechar modais
+    // Fechar modais
+    if (closeButtons.length > 0) {
         closeButtons.forEach(function(button) {
-          button.addEventListener('click', function() {
-            privacyModal.style.display = 'none';
-            termsModal.style.display = 'none';
-            disclaimerModal.style.display = 'none';
-          });
+            button.addEventListener('click', function() {
+                if (privacyModal) privacyModal.style.display = 'none';
+                if (termsModal) termsModal.style.display = 'none';
+                if (disclaimerModal) disclaimerModal.style.display = 'none';
+            });
         });
+    }
 
-        // Fechar ao clicar fora do modal
-        window.addEventListener('click', function(event) {
-          if (event.target === privacyModal) {
+    // Fechar ao clicar fora do modal
+    window.addEventListener('click', function(event) {
+        if (privacyModal && event.target === privacyModal) {
             privacyModal.style.display = 'none';
-          }
-          if (event.target === termsModal) {
+        }
+        if (termsModal && event.target === termsModal) {
             termsModal.style.display = 'none';
-          }
-          if (event.target === disclaimerModal) {
+        }
+        if (disclaimerModal && event.target === disclaimerModal) {
             disclaimerModal.style.display = 'none';
-          }
-        });
-      });
+        }
+    });
+});
