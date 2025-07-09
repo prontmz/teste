@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
     });
-});
- document.addEventListener('DOMContentLoaded', function() {
+
+
         // Elementos
         const privacyModal = document.getElementById('privacyModal');
         const termsModal = document.getElementById('termsModal');
