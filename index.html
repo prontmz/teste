@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags para SEO -->
+    <title>Bela África Austral - Descubra Países, Culturas e Paisagens da África Meridional</title>
+    <meta name="description" content="Explore a diversidade dos países da África Austral. Informações completas sobre cultura, geografia, turismo e história da região sul do continente africano.">
+    <meta name="keywords" content="África Austral, países África Meridional, turismo África do Sul, cultura africana, história África Austral, geografia África Austral, viagens África Austral">
+    <meta name="author" content="Bela África Austral">
+    <link rel="stylesheet" href="Css/style.css">
+    
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Bela África Austral",
+      "url": "https://belaafricaaustral.com/",
+      "description": "Portal completo sobre os países da África Austral com informações sobre cultura, turismo, história e geografia.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bela África Austral",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://belaafricaaustral.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="carousel">
+            
+            <div class="carousel-item active">
+                <img src="imagens/Aus2.webp" alt="Paisagem da África Austral 1" class="carousel-img">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Aus1.webp" alt="Paisagem da África Austral 2" class="carousel-img">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Aus3.webp" alt="Paisagem da África Austral 3" class="carousel-img">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Aus4.webp" alt="Paisagem da África Austral 4" class="carousel-img">
+            </div>
+        </div>
+        
+        <div class="overlay"></div>
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="logo" aria-label="Bela África Austral - Página inicial">
+                <span>Bela</span> <span>África Austral</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-home"></i> Início</a>
+                <a href="informacao/mapa.html"><i class="fas fa-globe-africa"></i> Países</a>
+                <a href="informacao/Fauna e Flora.html"><i class="fas fa-images"></i> Fauna e Flora</a>
+                <a href="informacao/cultura Austral.html"><i class="fas fa-book"></i> Cultura</a>
+                <a href="informacao/conctato.html"><i class="fas fa-envelope"></i> Contato</a>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Menu mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        
+        <!-- Conteúdo do Header -->
+        <div class="header-content">
+            <h1>Descubra a Beleza e Diversidade da África Austral</h1>
+            <p>Explore os países da região sul do continente africano, suas culturas fascinantes, paisagens deslumbrantes e histórias inspiradoras</p>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" id="country-search" placeholder="Pesquise um país da África Austral..." aria-label="Pesquisar país da África Austral">
+                <button class="search-button" id="search-btn">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+                <div id="suggestions-container" class="suggestions-container"></div>
+            </div>
+        </div>
+        
+        <a href="#countries" class="scroll-down" aria-label="Role para baixo">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+    
+    <!-- Conteúdo Principal -->
+    <main id="countries">
+        <div class="section-title">
+            <h2>Países da África Austral</h2>
+            <p>Conheça a diversidade cultural, geográfica e histórica das nações que compõem a região sul do continente africano</p>
+        </div>
+        
+        <div class="countries-grid">
+            <!-- Angola -->
+            <div class="country-card">
+                <div class="card-header">
+                    <img src="imagens/Angola1.webp" 
+                         alt="Paisagem de Angola com savana e árvores"
+                         loading="lazy"
+                         width="300"
+                         height="200">
+                    <div class="country-name">Angola</div>
+                </div>
+                <div class="card-content">
+                    <div class="country-info">
+                        <div class="info-item">
+                            <div class="info-label">Capital</div>
+                            <div class="info-value">Luanda</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">População</div>
+                            <div class="info-value">34.5M</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Idioma</div>
+                            <div class="info-value">Português</div>
+                        </div>
+                    </div>
+                    <p class="country-description">Conhecida por suas paisagens diversas, incluindo o deserto do Namibe, belas praias e a floresta tropical do Maiombe. Rica em recursos naturais e com uma cultura vibrante.</p>
+                    <a href="Countries/Angola.html" class="explore-btn">Explorar Angola</a>
+                </div>
+            </div>
+            
+            <!-- África do Sul -->
+            <div class="country-card">
+                <div class="card-header">
+                    <img src="imagens/sul1.webp" 
+                         alt="Cidade do Cabo e Table Mountain na África do Sul"
+                         loading="lazy"
+                         width="300"
+                         height="200">
+                    <div class="country-name">África do Sul</div>
+                </div>
+                <div class="card-content">
+                    <div class="country-info">
+                        <div class="info-item">
+                            <div class="info-label">Capital</div>
+                            <div class="info-value">Pretória, Cidade do Cabo, Bloemfontein</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">População</div>
+                            <div class="info-value">60.1M</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Idioma</div>
+                            <div class="info-value">11 idiomas oficiais</div>
+                        </div>
+                    </div>
+                    <p class="country-description">Conhecida como a "Nação Arco-Íris" por sua diversidade cultural, paisagens impressionantes e história de superação do apartheid. Lar de parques nacionais famosos.</p>
+                    <a href="Countries/africa do sul.html" class="explore-btn">Explorar África do Sul</a>
+                </div>
+            </div>
+            
+            <!-- Moçambique -->
+            <div class="country-card">
+                <div class="card-header">
+                    <img src="imagens/Moz24.webp" 
+                         alt="Praias de Moçambique com coqueiros"
+                         loading="lazy"
+                         width="300"
+                         height="200">
+                    <div class="country-name">Moçambique</div>
+                </div>
+                <div class="card-content">
+                    <div class="country-info">
+                        <div class="info-item">
+                            <div class="info-label">Capital</div>
+                            <div class="info-value">Maputo</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">População</div>
+                            <div class="info-value">32.1M</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Idioma</div>
+                            <div class="info-value">Português</div>
+                        </div>
+                    </div>
+                    <p class="country-description">Famosa por suas praias paradisíacas no Arquipélago de Bazaruto, cultura rica e mistura de influências africanas, árabes e portuguesas.</p>
+                    <a href="Countries/mocambique.html" class="explore-btn">Explorar Moçambique</a>
+                </div>
+            </div>
+            
+            <!-- Namíbia -->
+            <div class="country-card">
+                <div class="card-header">
+                    <img src="imagens/Namibia1.webp" 
+                         alt="Deserto do Namibe na Namíbia"
+                         loading="lazy"
+                         width="300"
+                         height="200">
+                    <div class="country-name">Namíbia</div>
+                </div>
+                <div class="card-content">
+                    <div class="country-info">
+                        <div class="info-item">
+                            <div class="info-label">Capital</div>
+                            <div class="info-value">Windhoek</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">População</div>
+                            <div class="info-value">2.6M</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Idioma</div>
+                            <div class="info-value">Inglês</div>
+                        </div>
+                    </div>
+                    <p class="country-description">Conhecida por suas paisagens desérticas impressionantes, incluindo o deserto do Namibe e o Parque Nacional Etosha, com vida selvagem abundante.</p>
+                    <a href="Countries/Namibia.html" class="explore-btn">Explorar Namíbia</a>
+                </div>
+            </div>
+            
+            <!-- Botsuana -->
+            <div class="country-card">
+                <div class="card-header">
+                    <img src="imagens/Botswana1.webp" 
+                         alt="Delta do Okavango em Botsuana"
+                         loading="lazy"
+                         width="300"
+                         height="200">
+                    <div class="country-name">Botsuana</div>
+                </div>
+                <div class="card-content">
+                    <div class="country-info">
+                        <div class="info-item">
+                            <div class="info-label">Capital</div>
+                            <div class="info-value">Gaborone</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">População</div>
+                            <div class="info-value">2.4M</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Idioma</div>
+                            <div class="info-value">Inglês, Setswana</div>
+                        </div>
+                    </div>
+                    <p class="country-description">São imensas salinas brancas, que antigamente eram um grande lago.
+                    Durante a seca parece uma paisagem lunar.
+                    Quando chove, enche-se de água e aparecem flamingos e outras aves.
+                     A Ilha Kubu é uma pequena ilha com baobás e é um local sagrado para os povos locais..</p>
+                    <a href="Countries/botsuana.html" class="explore-btn">Explorar Botsuana</a>
+                </div>
+            </div>
+            
+            <!-- Zimbábue -->
+            <div class="country-card">
+                <div class="card-header">
+                    <img src="imagens/z5.webp" 
+                         alt="Cataratas Vitória no Zimbábue"
+                         loading="lazy"
+                         width="300"
+                         height="200">
+                    <div class="country-name">Zimbábue</div>
+                </div>
+                <div class="card-content">
+                    <div class="country-info">
+                        <div class="info-item">
+                            <div class="info-label">Capital</div>
+                            <div class="info-value">Harare</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">População</div>
+                            <div class="info-value">15.1M</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Idioma</div>
+                            <div class="info-value">Inglês, Shona, Ndebele</div>
+                        </div>
+                    </div>
+                    <p class="country-description">Lar das impressionantes Cataratas Vitória, patrimônio mundial da UNESCO, e de importantes sítios arqueológicos como o Grande Zimbábue.</p>
+                    <a href="Countries/ZimbabWe.html" class="explore-btn">Explorar Zimbábue</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Bela África Austral</h3>
+                <p>Nosso objetivo é promover o conhecimento e apreciação pela diversidade cultural, natural e histórica da região sul do continente africano.</p>
+                <div class="footer-column">
+    
+</div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Países</h3>
+                <ul class="footer-links">
+                    <li><a href="Countries/angola.html"><i class="fas fa-chevron-right"></i> Angola</a></li>
+                    <li><a href="Countries/africa do sul.html"><i class="fas fa-chevron-right"></i> África do Sul</a></li>
+                    <li><a href="Countries/mocambique.html"><i class="fas fa-chevron-right"></i> Moçambique</a></li>
+                    <li><a href="Countries/namibia.html"><i class="fas fa-chevron-right"></i> Namíbia</a></li>
+                    <li><a href="Countries/botsuana.html"><i class="fas fa-chevron-right"></i> Botsuana</a></li>
+                </ul>
+            </div>
+            
+          <div class="footer-column">
+                <h3>Recursos</h3>
+                <ul class="footer-links">
+                    <li><a href="informacao/cultura Austral.html"><i class="fas fa-chevron-right"></i> Cultura Austral</a></li>
+                    <li><a href="informacao/Fauna e Flora.html"><i class="fas fa-chevron-right"></i> Fauna e Flora</a></li>
+                    <li><a href="informacao/Historia.html"><i class="fas fa-chevron-right"></i> História Regional</a></li>
+                    <li><a href="informacao/mapa.html"><i class="fas fa-chevron-right"></i> paises</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:belaAfrica@gmail.com"><i class="fas fa-envelope"></i> belaafrica@gmail.com</a></li>
+                    
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Maputo, Moçambique</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+     <div class="footer-bottom">
+            <p>&copy; 2025 Bela África Austral. Todos os direitos reservados.</p>
+            <div class="legal-links">
+                <a href="#" id="footerPrivacyLink">Política de Privacidade</a> |
+                <a href="#" id="footerTermsLink">Termos de Serviço</a> |
+                <a href="#" id="footerDisclaimerLink">Isenção de Responsabilidade</a>
+            </div>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> para celebrar a beleza da África Meridional</p>
+        </div>
+    </footer>
+
+    <!-- Política de Privacidade em Modal -->
+    <div id="privacyModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Política de Privacidade</h2>
+        <p><strong>Última atualização:</strong> 04 de Julho de 2024</p>
+
+        <div class="policy-section">
+          <h3>1. Informações Gerais</h3>
+          <p>O Bela África Austral ("nós", "nosso" ou "site") respeita sua privacidade. Esta política descreve como coletamos, usamos e protegemos suas informações quando você visita nosso site.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>2. Coleta de Dados</h3>
+          <p>Podemos coletar os seguintes tipos de informações:</p>
+          <ul>
+            <li><strong>Dados pessoais:</strong> Nome, e-mail (quando fornecido voluntariamente)</li>
+            <li><strong>Dados de navegação:</strong> IP, tipo de navegador, páginas visitadas, tempo gasto</li>
+            <li><strong>Cookies:</strong> Usamos cookies para melhorar sua experiência</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h3>3. Publicidade e Google AdSense</h3>
+          <p>Nosso site usa o Google AdSense, um serviço de publicidade fornecido pelo Google. O Google AdSense usa cookies para exibir anúncios relevantes.</p>
+          <p>O Google usa cookies DART para exibir anúncios baseados em visitas anteriores ao nosso site e outros sites na internet. Os usuários podem optar por não usar o cookie DART visitando a <a href="https://policies.google.com/technologies/ads" target="_blank">Política de publicidade do Google</a>.</p>
+          <p>Terceiros, incluindo o Google, usam cookies para veicular anúncios com base em visitas anteriores dos usuários ao nosso site ou a outros sites. O uso de cookies de publicidade permite que o Google e seus parceiros veiculem anúncios com base na visita dos usuários ao nosso site e/ou a outros sites na Internet.</p>
+          <p>Os usuários podem optar por não receber publicidade personalizada visitando as <a href="https://www.google.com/settings/ads" target="_blank">Configurações de anúncios</a> do Google.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>4. Uso dos Dados</h3>
+          <p>Usamos as informações coletadas para:</p>
+          <ul>
+            <li>Melhorar nosso site e conteúdo</li>
+            <li>Personalizar sua experiência</li>
+            <li>Exibir anúncios relevantes</li>
+            <li>Analisar tráfego e tendências</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h3>5. Compartilhamento de Dados</h3>
+          <p>Não vendemos suas informações pessoais. Podemos compartilhar dados com:</p>
+          <ul>
+            <li>Provedores de serviços (como Google Analytics)</li>
+            <li>Parceiros de publicidade (como Google AdSense)</li>
+            <li>Quando exigido por lei</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h3>6. Cookies</h3>
+          <p>Nosso site usa cookies para:</p>
+          <ul>
+            <li>Funcionalidade do site</li>
+            <li>Análise de tráfego</li>
+            <li>Publicidade personalizada</li>
+          </ul>
+          <p>Você pode configurar seu navegador para recusar cookies, mas partes do site podem não funcionar corretamente.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>7. Links para Outros Sites</h3>
+          <p>Nosso site contém links para sites externos. Não somos responsáveis por suas práticas de privacidade.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>8. Segurança</h3>
+          <p>Implementamos medidas de segurança para proteger suas informações, mas nenhum método de transmissão online é 100% seguro.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>9. Alterações nesta Política</h3>
+          <p>Podemos atualizar esta política periodicamente. A versão mais recente estará sempre nesta página.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>10. Contato</h3>
+          <p>Para dúvidas sobre esta política, entre em contato: <a href="mailto:belaafrica@gmail.com">belaafrica@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Termos de Serviço em Modal -->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Termos de Serviço</h2>
+        <p><strong>Última atualização:</strong> 04 de Julho de 2024</p>
+
+        <div class="policy-section">
+          <h3>1. Aceitação dos Termos</h3>
+          <p>Ao acessar e usar o site Bela África Austral, você concorda em cumprir estes Termos de Serviço.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>2. Uso do Conteúdo</h3>
+          <p>Todo o conteúdo deste site é protegido por direitos autorais e é apenas para uso pessoal e não comercial.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>3. Isenção de Responsabilidade</h3>
+          <p>O conteúdo é fornecido "como está". Não garantimos sua precisão ou completude.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>4. Limitações</h3>
+          <p>Não seremos responsáveis por quaisquer danos decorrentes do uso deste site.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>5. Alterações nos Termos</h3>
+          <p>Podemos modificar estes termos a qualquer momento. O uso continuado constitui aceitação.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Isenção de Responsabilidade em Modal -->
+    <div id="disclaimerModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Isenção de Responsabilidade</h2>
+        <p><strong>Última atualização:</strong> 04 de Julho de 2024</p>
+
+        <div class="policy-section">
+          <h3>1. Propósito do Site</h3>
+          <p>O Bela África Austral é um site informativo com o objetivo de compartilhar conhecimento sobre os países da África Austral. As informações contidas neste site são para fins educacionais e gerais apenas.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>2. Precisão das Informações</h3>
+          <p>Embora nos esforcemos para fornecer informações precisas e atualizadas, não garantimos a completude ou precisão de qualquer informação neste site. Os leitores devem verificar informações importantes antes de tomar decisões com base no conteúdo deste site.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>3. Links Externos</h3>
+          <p>Este site pode conter links para sites de terceiros. Não temos controle sobre o conteúdo desses sites e não nos responsabilizamos por seu conteúdo ou práticas de privacidade.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>4. Viagens e Segurança</h3>
+          <p>As informações sobre destinos de viagem são fornecidas como referência geral. Recomendamos que os viajantes verifiquem avisos oficiais de viagem e consultem especialistas antes de planejar qualquer viagem.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aviso de Cookies -->
+    <div id="cookieConsent" class="cookie-consent">
+      <div class="cookie-content">
+        <p>Este site usa cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nosso uso de cookies.</p>
+        <div class="cookie-buttons">
+          <button id="acceptCookies" class="cookie-btn accept">Aceitar</button>
+          <button id="rejectCookies" class="cookie-btn reject">Recusar</button>
+          <a href="#" id="learnMoreCookies" class="cookie-learn-more">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Fixo para Políticas -->
+    <div class="fixed-policy-links">
+      <a href="#" id="privacyLink">Privacidade</a>
+      <a href="#" id="termsLink">Termos</a>
+    </div>
+    
+
+    
+    <script src="Js/PaginaAustral.Js"></script>
+</body>
+</html>
