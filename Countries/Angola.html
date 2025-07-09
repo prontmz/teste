@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angola - Terra de Diversidade e Beleza</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/ao1.webp" alt="Praia do Cabo Ledo em Angola" loading="lazy">
+            <img src="../imagens/ao2.webp" alt="Ruínas de São Miguel em Luanda" loading="lazy">
+            <img src="../imagens/ao3.webp" alt="Palancas Negras no Parque Nacional da Kissama" loading="lazy">
+            <img src="../imagens/ao4.webp" alt="Deserto do Namibe" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>ANGOLA</h1>
+            <p>Descubra um país de contrastes fascinantes, desde praias paradisíacas até desertos impressionantes</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="flora">Flora</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="diversidade">Diversidade</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 10 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História de Angola</h2>
+                <div class="intro-box">
+                    <p>Da antiga civilização do Reino do Congo à nação moderna, Angola tem uma história rica e complexa que moldou sua identidade única.</p>
+                </div>
+                <p>Angola foi habitada desde a pré-história por povos caçadores-coletores. O Reino do Congo floresceu no século XIV, estabelecendo relações com os portugueses que chegaram no século XV. Tornou-se colônia portuguesa por mais de 400 anos até a independência em 1975.</p>
+                <img src="../imagens/Angola2.webp" alt="Fortaleza de São Miguel em Luanda" class="content-image" loading="lazy">
+                <p class="image-caption">Fortaleza de São Miguel, marco histórico de Luanda</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>O nome "Angola" vem de "Ngola", título dos governantes do Reino Ndongo que existia na região quando os portugueses chegaram.</p>
+                </div>
+                <p>Após a independência, o país mergulhou em uma longa guerra civil que durou até 2002. Desde então, Angola tem experimentado um período de reconstrução e crescimento econômico acelerado.</p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Marcos Históricos</h3>
+                <div class="gallery">
+                    <img src="imagens/independencia-angola.webp" alt="Celebração da Independência" loading="lazy">
+                    <img src="imagens/luanda-antiga.webp" alt="Luanda antiga" loading="lazy">
+                    <img src="imagens/bandeira-angola.webp" alt="Bandeira de Angola" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia de Angola</h2>
+                <div class="intro-box">
+                    <p>Com uma costa atlântica extensa e paisagens variadas, Angola oferece uma diversidade geográfica impressionante.</p>
+                </div>
+                <p>Angola está localizada na costa oeste da África Austral, fazendo fronteira com Namíbia, Zâmbia e República Democrática do Congo. O país possui 1.600 km de costa atlântica e um território que vai desde desertos no sul até florestas tropicais no norte.</p>
+                <img src="imagens/mapa-angola.webp" alt="Mapa de Angola" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a diversidade geográfica de Angola</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>O Deserto do Namibe, um dos mais antigos do mundo, abriga as famosas árvores Welwitschia mirabilis que podem viver mais de 1.000 anos.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Rio Kwanza (maior rio totalmente angolano)</li>
+                    <li>Serra da Leba (estrada sinuosa com vista espetacular)</li>
+                    <li>Morro do Môco (ponto mais alto com 2.620m)</li>
+                    <li>Baía do Lobito (uma das mais belas da África)</li>
+                    <li>Deserto do Namibe (ecossistema único)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Qual é o nome do deserto angolano que é considerado um dos mais antigos do mundo?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Deserto do Kalahari</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">Deserto do Namibe</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Deserto do Cubango</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia de Angola</h2>
+                <div class="intro-box">
+                    <p>Com vastos recursos naturais e uma economia em diversificação, Angola é uma das maiores economias da África Austral.</p>
+                </div>
+                <p>Angola possui a terceira maior economia da África Subsaariana, impulsionada principalmente pelo petróleo e diamantes. Nos últimos anos, o governo tem trabalhado para diversificar a economia, investindo em agricultura, turismo e indústria.</p>
+                <img src="imagens/petroleo-angola.webp" alt="Indústria petrolífera em Angola" class="content-image" loading="lazy">
+                <p class="image-caption">Plataforma petrolífera, setor que representa 90% das exportações</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>Angola é o segundo maior produtor de petróleo da África, atrás apenas da Nigéria, e um dos maiores exportadores mundiais de diamantes.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Petróleo e gás (maior contribuinte para o PIB)</li>
+                    <li>Mineração (diamantes, ferro, fosfatos)</li>
+                    <li>Agricultura (café, banana, sisal)</li>
+                    <li>Pesca (recursos marinhos abundantes)</li>
+                    <li>Turismo (em crescimento)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades em Angola?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado promissor.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna de Angola</h2>
+                <div class="intro-box">
+                    <p>Com parques nacionais ricos em biodiversidade, Angola abriga espécies únicas e ecossistemas variados.</p>
+                </div>
+                <p>Angola possui uma fauna diversificada que inclui a rara palanca negra gigante (símbolo nacional), elefantes, leões e diversas espécies de antílopes. O Parque Nacional da Kissama é o mais conhecido, com programas bem-sucedidos de reintrodução de animais.</p>
+                <img src="imagens/palanca-negra.webp" alt="Palanca Negra Gigante" class="content-image" loading="lazy">
+                <p class="image-caption">Palanca negra gigante, animal-símbolo de Angola</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>A palanca negra gigante é uma espécie endêmica de Angola e está entre os antílopes mais raros do mundo, encontrada apenas na região entre os rios Cuango e Cassai.</p>
+                </div>
+                <p>Principais áreas de conservação:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Parque Nacional da Kissama ("santuário da vida selvagem")</li>
+                    <li>Parque Nacional do Iona (maior parque do país)</li>
+                    <li>Parque Nacional da Cameia (ecossistema de planícies alagadas)</li>
+                    <li>Reserva Florestal do Golungo Alto (biodiversidade única)</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/elefantes-kissama.webp" alt="Elefantes no Kissama" loading="lazy">
+                    <img src="imagens/leoes-angola.webp" alt="Leões" loading="lazy">
+                    <img src="imagens/aves-angola.webp" alt="Pássaros" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Flora -->
+            <div id="flora" class="tab-content">
+                <h2 class="section-title">Flora de Angola</h2>
+                <div class="intro-box">
+                    <p>Das florestas tropicais do norte às plantas do deserto do Namibe, a flora angolana é surpreendentemente diversa.</p>
+                </div>
+                <p>Angola possui mais de 8.000 espécies de plantas, muitas delas endêmicas. A Welwitschia mirabilis, planta do deserto que pode viver mais de mil anos, é uma das mais famosas. Nas regiões úmidas, destacam-se as florestas de miombo e as palmeiras.</p>
+                <img src="imagens/welwitschia.webp" alt="Welwitschia mirabilis" class="content-image" loading="lazy">
+                <p class="image-caption">Welwitschia mirabilis, planta icônica do deserto do Namibe</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-tree"></i> Símbolo Natural</h3>
+                    <p>A Imbondeiro (baobá) é uma das árvores mais emblemáticas de Angola, podendo armazenar até 120.000 litros de água em seu tronco para sobreviver às secas.</p>
+                </div>
+                <p>Principais biomas vegetais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Florestas tropicais (norte do país)</li>
+                    <li>Savanas de miombo (centro de Angola)</li>
+                    <li>Vegetação desértica (sul do país)</li>
+                    <li>Manguezais (ao longo da costa)</li>
+                    <li>Florestas de montanha (regiões altas)</li>
+                </ul>
+                </p>
+                <p>A flor nacional de Angola é a Rosa de Porcelana (Impatiens balsamina), uma planta ornamental que aparece em diversas manifestações culturais.</p>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura de Angola</h2>
+                <div class="intro-box">
+                    <p>Com influências africanas e portuguesas, a cultura angolana é vibrante e diversificada, expressa na música, dança e artes.</p>
+                </div>
+                <p>A cultura angolana é uma mistura fascinante de tradições africanas e influência portuguesa. A música, especialmente o semba e o kizomba, ganhou fama internacional. A literatura angolana também se destaca, com autores como Pepetela e José Eduardo Agualusa.</p>
+                <img src="../imagens/Angola4.webp" alt="Dança tradicional angolana" class="content-image" loading="lazy">
+                <p class="image-caption">Dança tradicional, expressão cultural vibrante</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>O semba, ritmo musical ancestral que deu origem à samba brasileira, é considerado o coração da música angolana e uma importante expressão cultural.</p>
+                </div>
+                <p>A culinária angolana é rica e saborosa:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Funje (papa de farinha de mandioca, alimento básico)</li>
+                    <li>Muamba de galinha (prato nacional com dendê e quiabo)</li>
+                    <li>Calulu (peixe ou carne seca com verduras)</li>
+                    <li>Mufete (peixe grelhado com feijão de óleo de palma)</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Diversidade -->
+            <div id="diversidade" class="tab-content">
+                <h2 class="section-title">Diversidade de Angola</h2>
+                <div class="intro-box">
+                    <p>Com mais de 90 grupos étnicos e uma mistura cultural rica, Angola é um país de grande diversidade.</p>
+                </div>
+                <p>Angola tem cerca de 34 milhões de habitantes, composto por diversos grupos étnicos, sendo os ovimbundu (37%), ambundu (25%) e bakongo (13%) os mais numerosos. O português é a língua oficial, mas são faladas mais de 40 línguas nacionais.</p>
+                <img src="imagens/povos-angola.webp" alt="Diversidade étnica de Angola" class="content-image" loading="lazy">
+                <p class="image-caption">Diversidade étnica e cultural angolana</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-users"></i> Curiosidade Cultural</h3>
+                    <p>Luanda, a capital de Angola, é considerada uma das cidades mais caras do mundo para expatriados, mas também uma das mais vibrantes culturalmente na África.</p>
+                </div>
+                <p>Religiões em Angola:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cristianismo (90%, maioria católica)</li>
+                    <li>Religiões tradicionais africanas (5%)</li>
+                    <li>Outras religiões (5%)</li>
+                </ul>
+                </p>
+                <p>Angola tem uma população jovem, com cerca de 65% dos angolanos com menos de 25 anos, o que contribui para uma cultura dinâmica e em constante evolução.</p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo em Angola</h2>
+                <div class="intro-box">
+                    <p>Das praias paradisíacas às paisagens desérticas, Angola oferece experiências turísticas únicas e ainda pouco exploradas.</p>
+                </div>
+                <p>O turismo em Angola está em crescimento, com atrativos que incluem praias de areia branca, parques nacionais ricos em vida selvagem e cidades históricas. A Baía do Lobito e as praias do Cabo Ledo são destaque, assim como o deserto do Namibe e as quedas de Kalandula.</p>
+                <img src="imagens/praia-cabo-ledo.webp" alt="Praia do Cabo Ledo" class="content-image" loading="lazy">
+                <p class="image-caption">Praia do Cabo Ledo, paraíso para surfistas</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Destaque Turístico</h3>
+                    <p>As Quedas de Kalandula, com 105 metros de altura e 400 metros de largura, são uma das maiores cachoeiras da África e um espetáculo natural impressionante.</p>
+                </div>
+                <p>Principais atrações turísticas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Praias do Cabo Ledo e Baía do Lobito</li>
+                    <li>Quedas de Kalandula (segundas maiores da África)</li>
+                    <li>Parque Nacional da Kissama ("santuário da vida selvagem")</li>
+                    <li>Deserto do Namibe e dunas do Sossusvlei</li>
+                    <li>Ilha do Mussulo (paraíso tropical próximo a Luanda)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar Angola?</h3>
+                    <p>Descubra pacotes de viagem exclusivos para conhecer as maravilhas deste país cheio de contrastes.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados por Angola e dedicados a compartilhar a riqueza cultural e natural deste país fascinante.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> angolatourism@gmail.com</p>
+                  <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+                </div>
+            </div>
+            
+          
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Angola - Terra de Diversidade e Beleza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
