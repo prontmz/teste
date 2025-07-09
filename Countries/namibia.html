@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namíbia - Terra de Contrastes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Descubra a Namíbia, país de paisagens deslumbrantes, vida selvagem abundante e cultura fascinante no sudoeste da África">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/na1.webp" alt="Dunas de Sossusvlei" loading="lazy">
+            <img src="../imagens/na2.webp" alt="Parque Nacional Etosha" loading="lazy">
+            <img src="../imagens/na3.webp" alt="Povo Himba" loading="lazy">
+            <img src="../imagens/na5.webp" alt="Costa dos Esqueletos" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>NAMÍBIA</h1>
+            <p>Descubra a terra de paisagens dramáticas, vida selvagem espetacular e culturas ancestrais</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="atracoes">Atrações</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 12 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História da Namíbia</h2>
+                <div class="intro-box">
+                    <p>Das pinturas rupestres dos San à independência em 1990, uma jornada de resistência e resiliência.</p>
+                </div>
+                <p>A Namíbia foi habitada desde os tempos pré-históricos pelos povos San (Bosquímanos), como evidenciado pelas pinturas rupestres de Twyfelfontein. No século XIV, chegaram os povos Bantu, incluindo os Herero e Ovambo. Colonizada pela Alemanha em 1884, tornou-se o Sudoeste Africano Alemão, cenário do primeiro genocídio do século XX contra os Herero e Nama. Após a Primeira Guerra Mundial, a África do Sul administrou o território até a independência em 1990.</p>
+                <img src="imagens/namibia-independence.webp" alt="Celebração da independência" class="content-image" loading="lazy">
+                <p class="image-caption">Celebrações da independência em 21 de março de 1990</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>A Namíbia foi o primeiro país do mundo a incluir a proteção ambiental em sua constituição.</p>
+                </div>
+                <p>Desde a independência, a Namíbia tem sido um modelo de estabilidade democrática na África, com eleições regulares e transições pacíficas de poder. O país enfrenta desafios como desigualdade econômica e os efeitos do apartheid, mas tem feito progressos significativos em desenvolvimento humano.</p>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia da Namíbia</h2>
+                <div class="intro-box">
+                    <p>Um país de extremos: do deserto mais antigo do mundo a costas espetaculares.</p>
+                </div>
+                <p>A Namíbia está localizada no sudoeste da África, fazendo fronteira com Angola, Zâmbia, Botsuana, África do Sul e o Oceano Atlântico. O país é dominado pelo deserto do Namibe, considerado o mais antigo do mundo, e pelo planalto central. A costa dos Esqueletos é uma das mais inóspitas e espetaculares do planeta.</p>
+                <img src="imagens/namibia-map.webp" alt="Mapa da Namíbia" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a diversidade geográfica da Namíbia</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>As dunas de Sossusvlei, algumas das mais altas do mundo (até 380m), mudam de cor ao longo do dia, do rosa ao laranja intenso.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Deserto do Namibe (o mais antigo do mundo)</li>
+                    <li>Planalto Central (altitude média de 1.700m)</li>
+                    <li>Deserto do Kalahari (a leste)</li>
+                    <li>Costa dos Esqueletos (500km de costa desértica)</li>
+                    <li>Pan de Etosha (depressão salina de 5.000 km²)</li>
+                    <li>Rio Orange (fronteira com a África do Sul)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Qual é a característica única do deserto do Namibe?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">É o maior deserto do mundo</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">É considerado o deserto mais antigo do mundo</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Não tem dunas de areia</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia da Namíbia</h2>
+                <div class="intro-box">
+                    <p>Rica em recursos naturais, a Namíbia busca um crescimento inclusivo e sustentável.</p>
+                </div>
+                <p>A economia da Namíbia baseia-se na mineração (diamantes, urânio, ouro), agricultura, turismo e manufatura. O país é o quarto maior exportador de minerais não combustíveis da África e o quinto maior produtor mundial de urânio. Apesar de sua classificação como país de renda média-alta, a Namíbia tem uma das distribuições de renda mais desiguais do mundo.</p>
+                <img src="imagens/namibia-mining.webp" alt="Mineração de diamantes" class="content-image" loading="lazy">
+                <p class="image-caption">Mineração de diamantes, setor importante da economia</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>A Namíbia tem o maior índice de liberdade econômica da África Subsaariana e é considerado um dos países menos corruptos do continente.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Mineração (diamantes, urânio, ouro, zinco)</li>
+                    <li>Turismo (safáris, ecoturismo, turismo de aventura)</li>
+                    <li>Agricultura (gado, produtos marinhos, uvas)</li>
+                    <li>Pesca (principalmente sardinha e anchova)</li>
+                    <li>Manufatura (processamento de alimentos, bebidas)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades na Namíbia?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado estável.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna da Namíbia</h2>
+                <div class="intro-box">
+                    <p>Um santuário para vida selvagem adaptada a alguns dos ambientes mais extremos da Terra.</p>
+                </div>
+                <p>A Namíbia abriga uma impressionante variedade de vida selvagem, desde elefantes do deserto até rinocerontes negros ameaçados de extinção. O país foi o primeiro na África a incluir a proteção ambiental em sua constituição e tem cerca de 42% de seu território sob algum tipo de conservação.</p>
+                <img src="imagens/namibia-rhino.webp" alt="Rinoceronte negro" class="content-image" loading="lazy">
+                <p class="image-caption">Rinoceronte negro, espécie ameaçada protegida na Namíbia</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>Os elefantes do deserto da Namíbia são adaptados para sobreviver com pouca água e podem percorrer grandes distâncias em busca de alimento.</p>
+                </div>
+                <p>Principais espécies e onde encontrá-las:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Parque Nacional Etosha: leões, elefantes, rinocerontes, girafas, zebras</li>
+                    <li>Deserto do Namibe: oryx, hiena-marrom, avestruz</li>
+                    <li>Damaraland: rinocerontes negros, elefantes do deserto</li>
+                    <li>Costa dos Esqueletos: focas, flamingos, pelicanos</li>
+                    <li>Rio Zambeze (Caprivi): hipopótamos, crocodilos, muitas aves</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/namibia-lion.webp" alt="Leão no Etosha" loading="lazy">
+                    <img src="imagens/namibia-elephant.webp" alt="Elefante do deserto" loading="lazy">
+                    <img src="imagens/namibia-seals.webp" alt="Colônia de focas" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura da Namíbia</h2>
+                <div class="intro-box">
+                    <p>Um mosaico de tradições indígenas e influências coloniais em harmonia.</p>
+                </div>
+                <p>A cultura namibiana é uma rica tapeçaria de grupos étnicos, incluindo os Ovambo (maior grupo), Herero, Himba, Damara, Nama, San e outros. Cada grupo mantém tradições distintas, desde a vestimenta colorida dos Herero até os elaborados penteados e adornos dos Himba. A influência alemã é visível na arquitetura e culinária, especialmente em cidades como Windhoek e Swakopmund.</p>
+                <img src="imagens/namibia-herero.webp" alt="Mulheres Herero" class="content-image" loading="lazy">
+                <p class="image-caption">Mulheres Herero em trajes tradicionais influenciados pela era colonial</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>O Oshituthi shomagongo, festival das frutas marula dos povos Aawambo, é reconhecido pela UNESCO como Patrimônio Cultural Imaterial.</p>
+                </div>
+                <p>Principais aspectos culturais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Línguas: Inglês (oficial), Oshiwambo, Afrikaans, Alemão, línguas locais</li>
+                    <li>Religiões: Cristianismo (90%), crenças tradicionais</li>
+                    <li>Arte: Pinturas rupestres, esculturas em madeira, cestaria</li>
+                    <li>Música: Estilos tradicionais como o Oshiwambo e influências ocidentais</li>
+                    <li>Culinária: Influências alemãs (salsichas, cerveja) e pratos locais como o kapana</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Atrações -->
+            <div id="atracoes" class="tab-content">
+                <h2 class="section-title">Atrações da Namíbia</h2>
+                <div class="intro-box">
+                    <p>Das dunas mais altas do mundo a cidades coloniais encantadoras.</p>
+                </div>
+                <p>A Namíbia oferece algumas das paisagens mais espetaculares da África, combinadas com uma infraestrutura turística de qualidade. As atrações variam de parques nacionais repletos de vida selvagem a formações geológicas únicas e cidades com arquitetura colonial alemã.</p>
+                <img src="imagens/namibia-swakopmund.webp" alt="Swakopmund" class="content-image" loading="lazy">
+                <p class="image-caption">Swakopmund, cidade costeira com arquitetura alemã</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-map-marked-alt"></i> Destaque Turístico</h3>
+                    <p>Fish River Canyon é o segundo maior cânion do mundo (após o Grand Canyon), com 160km de extensão e até 550m de profundidade.</p>
+                </div>
+                <p>Principais atrações:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Sossusvlei e Deadvlei (dunas icônicas e árvores mortas)</li>
+                    <li>Parque Nacional Etosha (melhor safári fotográfico)</li>
+                    <li>Costa dos Esqueletos (paisagem lunar e naufrágios)</li>
+                    <li>Twylfelfontein (arte rupestre da UNESCO)</li>
+                    <li>Damaraland (paisagens vulcânicas e vida selvagem)</li>
+                    <li>Fish River Canyon (segundo maior do mundo)</li>
+                    <li>Windhoek (capital com mistura de África e Europa)</li>
+                    <li>Swakopmund (cidade colonial à beira-mar)</li>
+                </ul>
+                </p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo na Namíbia</h2>
+                <div class="intro-box">
+                    <p>Um destino para viajantes que buscam aventura, natureza intocada e culturas autênticas.</p>
+                </div>
+                <p>A Namíbia é um dos melhores destinos africanos para viagens autoguiadas, com estradas bem mantidas e paisagens de tirar o fôlego. O país oferece safáris de classe mundial, aventuras no deserto, encontros culturais com tribos locais e atividades como sandboard nas dunas ou voos panorâmicos sobre o deserto.</p>
+                <img src="imagens/namibia-safari.webp" alt="Safári no Etosha" class="content-image" loading="lazy">
+                <p class="image-caption">Safári no Parque Nacional Etosha, uma experiência imperdível</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Dado Turístico</h3>
+                    <p>A Namíbia é um dos poucos países onde você pode ter uma experiência de safári autoguiado, com a liberdade de explorar parques nacionais em seu próprio veículo.</p>
+                </div>
+                <p>Dicas para viajantes:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Melhor época: maio a outubro (estações secas para vida selvagem)</li>
+                    <li>Transporte: aluguel de carro 4x4 é ideal para explorar o país</li>
+                    <li>Acomodação: de acampamentos básicos a lodges de luxo</li>
+                    <li>Atividades: safáris, caminhadas nas dunas, observação de estrelas</li>
+                    <li>Orçamento: varia de econômico a alto luxo</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar a Namíbia?</h3>
+                    <p>Descubra roteiros personalizados para conhecer as maravilhas deste país único.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados pela Namíbia e dedicados a compartilhar sua beleza e cultura com o mundo.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#cultura">Cultura</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> namibiatourism@gmail.com</p>
+                   <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Namíbia - Terra de Contrastes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecte-se Conosco - Culturas da África</title>
+    <style>
+        :root {
+            --africa-orange: #E25822;
+            --africa-yellow: #F5E8C7;
+            --africa-brown: #1A120B;
+            --africa-green: #5E8B7E;
+            --africa-beige: #F9F5F0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--africa-beige);
+            color: var(--africa-brown);
+            line-height: 1.6;
+        }
+        
+        .africa-header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .africa-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .africa-header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--africa-orange);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .contact-card h2 {
+            color: var(--africa-orange);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-card h2 i {
+            margin-right: 10px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: var(--africa-beige);
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .africa-btn {
+            display: inline-block;
+            background: var(--africa-orange);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .africa-btn:hover {
+            background: var(--africa-brown);
+            transform: translateY(-3px);
+        }
+        
+        .africa-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .africa-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--africa-green);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .africa-social a:hover {
+            background: var(--africa-orange);
+            transform: scale(1.1);
+        }
+        
+        .africa-info {
+            margin-bottom: 20px;
+        }
+        
+        .africa-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .africa-info i {
+            margin-right: 10px;
+            color: var(--africa-green);
+        }
+        
+        .country-selector {
+            margin-top: 30px;
+        }
+        
+        .country-selector h3 {
+            margin-bottom: 15px;
+            color: var(--africa-green);
+        }
+        
+        .country-selector select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: var(--africa-beige);
+        }
+        
+        @media (max-width: 768px) {
+            .africa-header {
+                height: 250px;
+            }
+            
+            .africa-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="africa-header">
+        <h1>Conecte-se com as Culturas Africanas</h1>
+        <p>Compartilhe suas perguntas, sugestões ou colaborações sobre o continente africano</p>
+    </header>
+    
+    <main class="container">
+        <div class="contact-grid">
+            <!-- Formulário de Contato com FormSubmit -->
+            <div class="contact-card">
+                <h2><i class="fas fa-envelope"></i> Envie sua Mensagem</h2>
+                <form 
+                    class="contact-form" 
+                    action="https://formsubmit.co/seu-email@exemplo.com" 
+                    method="POST"
+                >
+                    <!-- Campos ocultos para configuração -->
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <input type="hidden" name="_subject" value="Nova mensagem sobre África">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <!-- Campos do formulário -->
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="assunto" required>
+                            <option value="" disabled selected>Selecione um tópico</option>
+                            <option value="Dúvida sobre culturas">Dúvida sobre culturas</option>
+                            <option value="Sugestão de conteúdo">Sugestão de conteúdo</option>
+                            <option value="Colaboração acadêmica">Colaboração acadêmica</option>
+                            <option value="Relato de viagem">Relato de viagem</option>
+                            <option value="Outros assuntos">Outros assuntos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" placeholder="Sua mensagem sobre a África..." required></textarea>
+                    </div>
+                    <button type="submit" class="africa-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+            <!-- Informações de Contato -->
+            <div class="contact-card">
+                <h2><i class="fas fa-globe-africa"></i> Conexão Africana</h2>
+                <div class="africa-info">
+                    <p><i class="fas fa-envelope"></i> africacultural@exemplo.com</p>
+                    <p><i class="fas fa-users"></i> Comunidade de estudos africanos</p>
+                    <p><i class="fas fa-book"></i> Pesquisa e compartilhamento cultural</p>
+                    <p><i class="fas fa-share-alt"></i> Conectando amantes da cultura africana</p>
+                </div>
+                
+                <div class="country-selector">
+                    <h3><i class="fas fa-map-marked-alt"></i> Interesse Específico</h3>
+                    <select>
+                        <option value="" disabled selected>Selecione uma região</option>
+                        <option>África Ocidental</option>
+                        <option>África Oriental</option>
+                        <option>África Central</option>
+                        <option>África Austral</option>
+                        <option>África do Norte</option>
+                        <option>Todo o continente</option>
+                    </select>
+                </div>
+             
+            </div>
+        </div>
+        
+
+    </main>
+    
+    <footer style="background: var(--africa-brown); color: white; text-align: center; padding: 30px 20px; margin-top: 50px;">
+        <p>&copy; <span id="current-year"></span> Culturas da África. Todos os direitos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">Uma celebração da diversidade cultural africana</p>
+    </footer>
+    
+    <script>
+        // Atualiza o ano no footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Efeito de carregamento
+        document.body.style.opacity = '0';
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.style.transition = 'opacity 0.5s ease';
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>

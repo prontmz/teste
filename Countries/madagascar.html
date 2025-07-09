@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar - Ilha dos Lemures</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/mad1.webp" alt="Lemures de Madagascar" loading="lazy">
+            <img src="../imagens/mad2.webp" alt="Avenida dos Baobás" loading="lazy">
+            <img src="../imagens/mad3.webp" alt="Praia de Nosy Be" loading="lazy">
+            <img src="../imagens/mad4.webp" alt="Tsingy de Bemaraha" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>MADAGASCAR</h1>
+            <p>Descubra a ilha continente, onde a natureza evoluiu em isolamento criando um mundo único</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="flora">Flora</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="diversidade">Diversidade</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 10 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Da migração austronésia ao reino Merina e à colonização francesa, Madagascar tem uma história fascinante e única.</p>
+                </div>
+                <p>Madagascar foi colonizada por povos austronésios vindos do sudeste asiático por volta de 350 a.C., seguidos por migrações bantu da África. No século XIX, o reino Merina unificou grande parte da ilha sob o comando do rei Radama I.</p>
+                <img src="imagens/queens-palace.webp" alt="Palácio da Rainha" class="content-image" loading="lazy">
+                <p class="image-caption">Rova de Antananarivo, palácio da Rainha Ranavalona</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>Madagascar foi um importante centro de comércio de piratas nos séculos XVII e XVIII, com lendas como o Capitão Kidd operando na ilha.</p>
+                </div>
+                <p>O país tornou-se colônia francesa em 1896 e conquistou a independência em 1960. Desde então, Madagascar tem enfrentado desafios políticos, mas mantém sua identidade cultural única que mistura influências africanas, asiáticas e europeias.</p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Marcos Históricos</h3>
+                <div class="gallery">
+                    <img src="imagens/independence-monument.webp" alt="Monumento da Independência" loading="lazy">
+                    <img src="imagens/antananarivo-city.webp" alt="Cidade de Antananarivo" loading="lazy">
+                    <img src="imagens/madagascar-flag.webp" alt="Bandeira de Madagascar" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Da floresta tropical aos desertos espinhosos, Madagascar oferece uma diversidade geográfica impressionante.</p>
+                </div>
+                <p>Madagascar é a quarta maior ilha do mundo, localizada no Oceano Índico a cerca de 400 km da costa africana. A ilha possui um planalto central montanhoso que desce para planícies costeiras estreitas, com clima que varia de tropical ao longo da costa a temperado nas terras altas.</p>
+                <img src="imagens/madagascar-map.webp" alt="Mapa de Madagascar" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a diversidade geográfica de Madagascar</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>Os Tsingy de Bemaraha são formações rochosas de calcário afiadas como facas, criando uma paisagem surreal que parece de outro planeta.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Planaltos Centrais (altitude média de 800-1.500m)</li>
+                    <li>Tsingy de Bemaraha (Patrimônio Mundial da UNESCO)</li>
+                    <li>Avenida dos Baobás (alinhamento icônico de árvores gigantes)</li>
+                    <li>Canal de Mozambique (separa a ilha do continente africano)</li>
+                    <li>Ilhas periféricas (Nosy Be, Île Sainte-Marie)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Quanto da vida selvagem de Madagascar é endêmica (não é encontrada em nenhum outro lugar)?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Cerca de 50%</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">Mais de 90%</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Cerca de 75%</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Com recursos naturais únicos e desafios de desenvolvimento, a economia malgaxe está em transformação.</p>
+                </div>
+                <p>Madagascar é um dos países mais pobres do mundo, com a economia baseada principalmente na agricultura, mineração em pequena escala e pesca. Vanilla, cravo e lichia são importantes produtos de exportação, com Madagascar sendo o maior produtor mundial de baunilha natural.</p>
+                <img src="imagens/vanilla-plantation.webp" alt="Plantações de baunilha" class="content-image" loading="lazy">
+                <p class="image-caption">Baunilha, o "ouro verde" de Madagascar</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>Madagascar produz cerca de 80% da baunilha natural do mundo, tornando-a o maior exportador global deste valioso produto.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Agricultura (baunilha, cravo, lichia, arroz)</li>
+                    <li>Mineração (níquel, cobalto, pedras preciosas)</li>
+                    <li>Pesca (camarão e atum para exportação)</li>
+                    <li>Turismo (em crescimento)</li>
+                    <li>Têxteis (Zonas Francas para exportação)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades em Madagascar?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado único.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Com mais de 90% de suas espécies animais endêmicas, Madagascar é um dos lugares mais biodiversos do planeta.</p>
+                </div>
+                <p>Madagascar é famosa por seus lêmures, primatas encontrados apenas na ilha, com mais de 100 espécies diferentes. Além dos lêmures, a ilha abriga camaleões coloridos, fossas (o maior predador), e uma incrível variedade de aves, répteis e insetos únicos.</p>
+                <img src="imagens/ring-tailed-lemurs.webp" alt="Lêmures de cauda anelada" class="content-image" loading="lazy">
+                <p class="image-caption">Lêmures de cauda anelada, uma das espécies mais icônicas</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>O aye-aye, um lêmure noturno com dentes de roedor e um dedo médio extremamente longo, é considerado um dos mamíferos mais estranhos do mundo.</p>
+                </div>
+                <p>Principais áreas de conservação:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Parque Nacional Andasibe-Mantadia (famosa pelo indri, o maior lêmure)</li>
+                    <li>Reserva de Anja (lêmures de cauda anelada)</li>
+                    <li>Parque Nacional Isalo (paisagens deslumbrantes e vida selvagem)</li>
+                    <li>Parque Nacional Ranomafana (floresta tropical e lêmures dourados)</li>
+                    <li>Reserva de Berenty (observação de lêmures ao pôr do sol)</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/chameleon.webp" alt="Camaleão" loading="lazy">
+                    <img src="imagens/fossa.webp" alt="Fossa" loading="lazy">
+                    <img src="imagens/madagascar-birds.webp" alt="Pássaros" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Flora -->
+            <div id="flora" class="tab-content">
+                <h2 class="section-title">Flora de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Com seis das oito espécies de baobá do mundo e milhares de plantas endêmicas, a flora malgaxe é extraordinária.</p>
+                </div>
+                <p>Madagascar possui uma variedade impressionante de ecossistemas vegetais, desde florestas tropicais úmidas no leste até florestas espinhosas secas no sudoeste. A ilha tem mais de 10.000 espécies de plantas, das quais 90% são endêmicas.</p>
+                <img src="imagens/baobab-sunset.webp" alt="Baobá ao pôr do sol" class="content-image" loading="lazy">
+                <p class="image-caption">Baobá, árvore icônica da paisagem malgaxe</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-tree"></i> Símbolo Natural</h3>
+                    <p>A árvore do viajante (Ravenala madagascariensis), com suas folhas em forma de leque que coletam água da chuva, é o símbolo nacional de Madagascar.</p>
+                </div>
+                <p>Principais biomas vegetais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Florestas tropicais úmidas (costa leste)</li>
+                    <li>Florestas decíduas secas (oeste)</li>
+                    <li>Florestas espinhosas (sudoeste)</li>
+                    <li>Pântanos e manguezais (costa)</li>
+                    <li>Vegetação de montanha (terras altas centrais)</li>
+                </ul>
+                </p>
+                <p>Madagascar é o lar de orquídeas selvagens espetaculares, com mais de 1.000 espécies registradas, muitas delas endêmicas.</p>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Com influências africanas, asiáticas e europeias, a cultura malgaxe é uma fusão única no mundo.</p>
+                </div>
+                <p>A cultura de Madagascar reflete suas origens diversas, com tradições que combinam elementos do sudeste asiático, África e Europa. O conceito de "fihavanana" (parentesco e solidariedade) é central para a sociedade malgaxe. A música, dança e artesanato são expressões culturais vibrantes.</p>
+                <img src="imagens/famadihana.webp" alt="Famadihana" class="content-image" loading="lazy">
+                <p class="image-caption">Famadihana, cerimônia tradicional de "volta dos mortos"</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>O valiha, um instrumento musical de bambu trazido pelos primeiros colonizadores do sudeste asiático, é considerado o instrumento nacional de Madagascar.</p>
+                </div>
+                <p>A culinária malgaxe é baseada em:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Vary amin'anana (arroz com folhas verdes)</li>
+                    <li>Romazava (ensopado de carne com folhas)</li>
+                    <li>Ravitoto (purê de folhas de mandioca com carne de porco)</li>
+                    <li>Frutos do mar frescos (especialmente nas áreas costeiras)</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Diversidade -->
+            <div id="diversidade" class="tab-content">
+                <h2 class="section-title">Diversidade de Madagascar</h2>
+                <div class="intro-box">
+                    <p>Com 18 grupos étnicos principais e uma mistura única de influências, Madagascar é um caldeirão cultural.</p>
+                </div>
+                <p>Madagascar tem cerca de 27 milhões de habitantes, divididos em 18 grupos étnicos principais, sendo os Merina, Betsileo, Betsimisaraka e Sakalava os maiores. Apesar das diferenças regionais, os malgaxes compartilham uma língua comum e muitas tradições culturais.</p>
+                <img src="imagens/malgaxe-village.webp" alt="Vila tradicional" class="content-image" loading="lazy">
+                <p class="image-caption">Vila tradicional mostrando o modo de vida rural</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-users"></i> Curiosidade Cultural</h3>
+                    <p>A língua malgaxe é mais próxima das línguas de Bornéu, na Indonésia, do que das línguas africanas próximas, refletindo as origens dos primeiros colonizadores.</p>
+                </div>
+                <p>Religiões em Madagascar:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cristianismo (85%, dividido entre católicos e protestantes)</li>
+                    <li>Religiões tradicionais (7%)</li>
+                    <li>Islamismo (3%)</li>
+                    <li>Outras ou nenhuma (5%)</li>
+                </ul>
+                </p>
+                <p>Madagascar tem duas línguas oficiais: o malgaxe (falado por toda a população) e o francês (usado nos negócios e governo).</p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo em Madagascar</h2>
+                <div class="intro-box">
+                    <p>Dos lêmures encantadores às praias paradisíacas, Madagascar oferece experiências turísticas inesquecíveis.</p>
+                </div>
+                <p>Madagascar é um destino para viajantes que buscam natureza intocada, vida selvagem única e praias deslumbrantes. A ilha oferece desde trekking na floresta tropical em busca de lêmures até relaxamento em ilhas de areia branca e mergulho em recifes de coral intocados.</p>
+                <img src="imagens/nosy-be-beach.webp" alt="Praia de Nosy Be" class="content-image" loading="lazy">
+                <p class="image-caption">Praias paradisíacas de Nosy Be, destino turístico popular</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Destaque Turístico</h3>
+                    <p>A Avenida dos Baobás, um alinhamento impressionante de árvores gigantes com mais de 800 anos, é um dos locais mais fotografados de Madagascar.</p>
+                </div>
+                <p>Principais atrações turísticas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Avenida dos Baobás (paisagem icônica)</li>
+                    <li>Parque Nacional Andasibe-Mantadia (para ver o indri, maior lêmure)</li>
+                    <li>Nosy Be (ilha com praias deslumbrantes)</li>
+                    <li>Tsingy de Bemaraha (formações rochosas únicas)</li>
+                    <li>Île Sainte-Marie (história pirata e observação de baleias)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar Madagascar?</h3>
+                    <p>Descubra pacotes de viagem exclusivos para conhecer as maravilhas desta ilha única.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados por Madagascar e dedicados a compartilhar a beleza e cultura desta ilha única com o mundo.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> madagascartourism@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Madagascar - Ilha dos Lemures. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

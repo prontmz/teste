@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const countryPages = {
         // Africa AUSTRAL:
         'angola': 'Countries/angola.html',
+        'Angola':'Countries/Angola.html',
         'áfrica do sul': 'Countries/africa do sul.html',
         'botswana':'Countries/Botswana.html',
          'Congo':'Countries/Republica Democratica do Congo.html ',

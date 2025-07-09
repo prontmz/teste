@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesoto - O Reino no Céu</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/lesoto1.webp" alt="Montanhas Maloti" class="content-image" loading="lazy">
+            <img src="../imagens/lesoto3.webp" alt="Sani Pass" class="content-image" loading="lazy">
+            <img src="../imagens/lesoto6.webp" alt="Cavalo Basotho" loading="lazy">
+            <img src="../imagens/lesoto4.webp" alt="Represa Katse" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>LESOTO</h1>
+            <p>Descubra o Reino no Céu, onde as montanhas tocam as nuvens e as tradições permanecem vivas</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="flora">Flora</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="diversidade">Diversidade</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 10 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História de Lesoto</h2>
+                <div class="intro-box">
+                    <p>De reino guerreiro a nação montanhosa independente, Lesoto tem uma história única na África Austral.</p>
+                </div>
+                <p>Lesoto foi fundado no início do século XIX pelo rei Moshoeshoe I, que uniu clãs dispersos para resistir aos zulus e aos colonos europeus. O país tornou-se protetorado britânico em 1868 como Basutolândia, mantendo sua autonomia interna.</p>
+                <img src="imagens/moshoeshoe-statue.webp" alt="Estátua do Rei Moshoeshoe I" class="content-image" loading="lazy">
+                <p class="image-caption">Rei Moshoeshoe I, fundador da nação Basotho</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>Lesoto é um dos apenas três reinos soberanos no continente africano (junto com Marrocos e Essuatíni).</p>
+                </div>
+                <p>O país conquistou a independência pacificamente do Reino Unido em 1966. Desde então, Lesoto tem sido uma democracia constitucional com um sistema político único que combina elementos tradicionais e modernos.</p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Marcos Históricos</h3>
+                <div class="gallery">
+                    <img src="imagens/thaba-bosiu.webp" alt="Thaba Bosiu" loading="lazy">
+                    <img src="imagens/independence-day.webp" alt="Dia da Independência" loading="lazy">
+                    <img src="imagens/lesotho-flag.webp" alt="Bandeira de Lesoto" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia de Lesoto</h2>
+                <div class="intro-box">
+                    <p>Com todas as suas terras acima de 1.000 metros de altitude, Lesoto é verdadeiramente o "Reino no Céu".</p>
+                </div>
+                <p>Lesoto é um enclave montanhoso completamente cercado pela África do Sul. É o único país independente do mundo que está inteiramente acima de 1.000 metros de altitude, com mais de 80% de seu território acima de 1.800 metros.</p>
+                <img src="imagens/lesotho-map.webp" alt="Mapa de Lesoto" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a localização montanhosa de Lesoto</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>O Thabana Ntlenyana, com 3.482 metros, é o pico mais alto da África ao sul do Kilimanjaro e o ponto mais alto de Lesoto.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Montanhas Drakensberg/Maloti (formam a espinha dorsal do país)</li>
+                    <li>Rio Orange (nasce nas montanhas de Lesoto)</li>
+                    <li>Represa Katse (uma das maiores barragens da África)</li>
+                    <li>Sani Pass (estrada de montanha espetacular)</li>
+                    <li>Planaltos centrais (onde vive a maioria da população)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Por que Lesoto é chamado de "Reino no Céu"?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Por sua proximidade com o equador</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">Porque todo o país está acima de 1.000m de altitude</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Por suas frequentes tempestades elétricas</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia de Lesoto</h2>
+                <div class="intro-box">
+                    <p>Com desafios e oportunidades únicas, a economia de Lesoto está se diversificando além da agricultura tradicional.</p>
+                </div>
+                <p>Lesoto é um dos países mais pobres do mundo, mas tem feito progressos significativos no desenvolvimento econômico. A economia baseia-se na agricultura de subsistência, exportação de água para a África do Sul, manufatura têxtil e remessas de trabalhadores nas minas sul-africanas.</p>
+                <img src="imagens/textile-factory.webp" alt="Fábrica têxtil" class="content-image" loading="lazy">
+                <p class="image-caption">Indústria têxtil, um dos pilares da economia moderna</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>Lesoto é o maior exportador de água para a África do Sul, fornecendo cerca de 30% da água consumida em Gauteng, a província mais rica do país vizinho.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Agricultura (milho, trigo, legumes)</li>
+                    <li>Pecuária (ovinos e caprinos para lã e mohair)</li>
+                    <li>Manufatura (principalmente têxteis para exportação)</li>
+                    <li>Exportação de água (Projeto Highlands Water)</li>
+                    <li>Turismo (em crescimento)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades em Lesoto?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado único.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna de Lesoto</h2>
+                <div class="intro-box">
+                    <p>Embora não tenha os grandes animais da savana africana, Lesoto possui uma vida selvagem adaptada às suas condições montanhosas únicas.</p>
+                </div>
+                <p>Lesoto não tem os "Big Five" da África, mas abriga espécies adaptadas ao clima montanhoso, como o elã-do-cabo, babuínos, lebres e diversas espécies de aves de rapina. O animal mais icônico é o pônei Basotho, uma raça resistente criada para as montanhas.</p>
+                <img src="imagens/basotho-pony.webp" alt="Pônei Basotho" class="content-image" loading="lazy">
+                <p class="image-caption">Pônei Basotho, animal emblemático do país</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>O pônei Basotho pode sobreviver a invernos rigorosos e é capaz de percorrer até 100km por dia em terreno montanhoso.</p>
+                </div>
+                <p>Principais áreas de conservação:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Parque Nacional Sehlabathebe (Patrimônio Mundial da UNESCO)</li>
+                    <li>Reserva Natural Bokong (proteção de espécies alpinas)</li>
+                    <li>Reserva Natural Ts'ehlanyane (florestas e vida selvagem)</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/lesotho-eland.webp" alt="Elã-do-cabo" loading="lazy">
+                    <img src="imagens/lesotho-birds.webp" alt="Pássaros" loading="lazy">
+                    <img src="imagens/lesotho-lammergeier.webp" alt="Quebra-ossos" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Flora -->
+            <div id="flora" class="tab-content">
+                <h2 class="section-title">Flora de Lesoto</h2>
+                <div class="intro-box">
+                    <p>Das florestas de altitude às plantas alpinas resistentes, a flora de Lesoto é adaptada a condições extremas.</p>
+                </div>
+                <p>A vegetação de Lesoto varia de pastagens alpinas nas áreas mais altas a florestas de protea e arbustos nas encostas das montanhas. As plantas desenvolveram adaptações para sobreviver a invernos rigorosos com neve e geadas.</p>
+                <img src="imagens/maloti-drakensberg.webp" alt="Vegetação alpina" class="content-image" loading="lazy">
+                <p class="image-caption">Vegetação alpina nas montanhas Maloti-Drakensberg</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-tree"></i> Símbolo Natural</h3>
+                    <p>A spirée (Spiraea spp.), uma planta com flores rosas que cresce em altitudes elevadas, é considerada um símbolo natural de Lesoto.</p>
+                </div>
+                <p>Principais biomas vegetais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Pastagens alpinas (áreas acima de 2.800m)</li>
+                    <li>Vegetação de montanha (encostas entre 1.800-2.800m)</li>
+                    <li>Florestas de protea (áreas protegidas)</li>
+                    <li>Arbustos resistentes (áreas mais baixas e secas)</li>
+                </ul>
+                </p>
+                <p>Lesoto é conhecido por suas plantas medicinais tradicionais, usadas há séculos pelo povo Basotho para tratar diversas condições.</p>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura de Lesoto</h2>
+                <div class="intro-box">
+                    <p>Com tradições que remontam ao rei Moshoeshoe I, a cultura Basotho é uma das mais distintas da África Austral.</p>
+                </div>
+                <p>A cultura de Lesoto é centrada nos valores de comunidade, respeito pelos mais velhos e conexão com a terra. O povo Basotho mantém fortes tradições, incluindo o uso do manto tradicional (seanamarena) e do chapéu cônico (mokorotlo), que aparece na bandeira nacional.</p>
+                <img src="imagens/basotho-culture.webp" alt="Cultura Basotho" class="content-image" loading="lazy">
+                <p class="image-caption">Homem Basotho com traje tradicional, incluindo o manto e chapéu característicos</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>O canto coral é uma tradição profundamente enraizada em Lesoto, com grupos frequentemente ganhando competições internacionais.</p>
+                </div>
+                <p>A culinária Basotho é baseada em:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Pap (mingau de farinha de milho, alimento básico)</li>
+                    <li>Moroho (vegetais de folhas verdes cozidos)</li>
+                    <li>Likhobe (prato de feijão e milho)</li>
+                    <li>Carne de cordeiro e cabrito (especialidades)</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Diversidade -->
+            <div id="diversidade" class="tab-content">
+                <h2 class="section-title">Diversidade de Lesoto</h2>
+                <div class="intro-box">
+                    <p>Embora etnicamente homogêneo, Lesoto possui uma rica diversidade cultural dentro da nação Basotho.</p>
+                </div>
+                <p>Lesoto tem cerca de 2,1 milhões de habitantes, com os Basotho representando 99,7% da população. Dentro deste grupo, há diversidade entre clãs e regiões, cada um com suas próprias tradições e dialetos do sesoto.</p>
+                <img src="imagens/basotho-village.webp" alt="Vila Basotho" class="content-image" loading="lazy">
+                <p class="image-caption">Vila tradicional Basotho nas montanhas</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-users"></i> Curiosidade Cultural</h3>
+                    <p>Lesoto tem uma das taxas de alfabetização mais altas da África, com cerca de 80% da população adulta capaz de ler e escrever.</p>
+                </div>
+                <p>Religiões em Lesoto:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cristianismo (90%, maioria católica e evangélica)</li>
+                    <li>Religiões tradicionais africanas (10%)</li>
+                </ul>
+                </p>
+                <p>Lesoto tem duas línguas oficiais: o sesoto (falado por quase toda a população) e o inglês (usado nos negócios e governo).</p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo em Lesoto</h2>
+                <div class="intro-box">
+                    <p>Das espetaculares montanhas Drakensberg às tradições culturais vivas, Lesoto oferece experiências turísticas únicas.</p>
+                </div>
+                <p>Lesoto é um destino para viajantes que buscam aventura, cultura autêntica e paisagens impressionantes. O país oferece algumas das melhores oportunidades de trekking e cavalgadas em montanhas na África, além de uma rica experiência cultural.</p>
+                <img src="imagens/sani-pass-view.webp" alt="Vista do Sani Pass" class="content-image" loading="lazy">
+                <p class="image-caption">Vista espetacular do Sani Pass, uma das estradas mais impressionantes da África</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Destaque Turístico</h3>
+                    <p>O Sani Pass, uma estrada de montanha que liga Lesoto à África do Sul, tem um dos pubs mais altos da África, a 2.874m de altitude.</p>
+                </div>
+                <p>Principais atrações turísticas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Sani Pass (estrada de montanha espetacular)</li>
+                    <li>Parque Nacional Sehlabathebe (paisagens únicas e arte rupestre)</li>
+                    <li>Katse Dam (uma das maiores barragens da África)</li>
+                    <li>Thaba Bosiu (fortaleza histórica do rei Moshoeshoe)</li>
+                    <li>Maletsunyane Falls (uma das cachoeiras mais altas da África)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar Lesoto?</h3>
+                    <p>Descubra pacotes de viagem exclusivos para conhecer as maravilhas deste reino montanhoso.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados por Lesoto e dedicados a compartilhar a beleza e cultura deste reino único com o mundo.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> lesototourism@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+                </div>
+            </div>
+            
+        
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Lesoto - O Reino no Céu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

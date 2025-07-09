@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zâmbia - Terra das Cataratas Vitória</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/zm1.webp" alt="Cataratas Vitória" loading="lazy">
+            <img src="../imagens/zm2.webp" alt="Safári na Zâmbia" loading="lazy">
+            <img src="../imagens/zm3.webp" alt="Vale do Luangwa" loading="lazy">
+            <img src="../imagens/zm4.webp" alt="Lago Kariba" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>ZÂMBIA</h1>
+            <p>Descubra a terra das majestosas Cataratas Vitória e da vida selvagem intocada</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="flora">Flora</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="diversidade">Diversidade</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 10 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História da Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Da pré-história aos reinos africanos e da colonização à independência, a Zâmbia tem uma história rica e fascinante.</p>
+                </div>
+                <p>A Zâmbia foi habitada por povos Khoisan há milhares de anos antes da migração Bantu. Importantes reinos como o Luba-Lunda floresceram na região. O explorador David Livingstone chegou em 1855, descobrindo as Cataratas Vitória.</p>
+                <img src="imagens/livingstone-statue.webp" alt="Estátua de David Livingstone" class="content-image" loading="lazy">
+                <p class="image-caption">Estátua de David Livingstone nas Cataratas Vitória</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>A Zâmbia foi o primeiro país a sediar uma eleição multipartidária após o fim do regime de partido único na África.</p>
+                </div>
+                <p>O país tornou-se independente do Reino Unido em 1964, com Kenneth Kaunda como primeiro presidente. Desde então, a Zâmbia tem sido uma democracia estável na região.</p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Marcos Históricos</h3>
+                <div class="gallery">
+                    <img src="imagens/independence-stadium.webp" alt="Estádio da Independência" loading="lazy">
+                    <img src="imagens/kaunda-era.webp" alt="Era Kaunda" loading="lazy">
+                    <img src="imagens/lusaka-city.webp" alt="Cidade de Lusaka" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia da Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Com paisagens variadas que vão desde as majestosas cataratas até vastos planaltos, a Zâmbia é um país de beleza natural impressionante.</p>
+                </div>
+                <p>A Zâmbia é um país sem litoral na África Austral, fazendo fronteira com 8 países. O rio Zambeze, um dos maiores da África, forma a fronteira sul com o Zimbábue e abriga as espetaculares Cataratas Vitória.</p>
+                <img src="imagens/zambia-map.webp" alt="Mapa da Zâmbia" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a localização estratégica da Zâmbia</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>As Cataratas Vitória, compartilhadas com o Zimbábue, são uma das Sete Maravilhas Naturais do Mundo com 1.708 metros de largura.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cataratas Vitória (uma das maiores cachoeiras do mundo)</li>
+                    <li>Rio Zambeze (quarto maior rio da África)</li>
+                    <li>Lago Kariba (um dos maiores lagos artificiais do mundo)</li>
+                    <li>Planalto Central (altitude média de 1.000-1.400m)</li>
+                    <li>Vale do Luangwa (importante ecossistema de vida selvagem)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Qual rio forma as Cataratas Vitória?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Congo</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">Zambeze</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Nilo</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia da Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Com vastos recursos naturais e um setor agrícola importante, a economia zambiana tem grande potencial de crescimento.</p>
+                </div>
+                <p>A Zâmbia é um dos maiores produtores de cobre da África, mineral que representa mais de 70% das exportações do país. A agricultura emprega a maioria da população, com cultivos como milho, algodão e tabaco.</p>
+                <img src="imagens/copper-mine.webp" alt="Minas de cobre" class="content-image" loading="lazy">
+                <p class="image-caption">Mineração de cobre, base da economia zambiana</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>A Zâmbia é o 7º maior produtor de cobre do mundo e o 2º da África, depois da República Democrática do Congo.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Mineração (cobre, cobalto, esmeraldas)</li>
+                    <li>Agricultura (milho, algodão, tabaco)</li>
+                    <li>Turismo (Cataratas Vitória, safáris)</li>
+                    <li>Energia (hidrelétrica no rio Zambeze)</li>
+                    <li>Manufatura (em desenvolvimento)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades na Zâmbia?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado emergente.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna da Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Com parques nacionais bem preservados, a Zâmbia oferece alguns dos melhores encontros com vida selvagem da África.</p>
+                </div>
+                <p>A Zâmbia é conhecida por seus safáris a pé de alta qualidade e por abrigar grandes populações de elefantes, leões, leopardos e hipopótamos. O Vale do Luangwa é particularmente famoso por seus leopardos.</p>
+                <img src="imagens/luangwa-leopard.webp" alt="Leopardo no Vale do Luangwa" class="content-image" loading="lazy">
+                <p class="image-caption">Leopardo no Vale do Luangwa, um dos melhores lugares para avistar este felino</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>A Zâmbia tem uma das maiores populações de hipopótamos da África, com estimativas de mais de 40.000 indivíduos.</p>
+                </div>
+                <p>Principais áreas de conservação:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Parque Nacional South Luangwa (melhor para safáris a pé)</li>
+                    <li>Parque Nacional Kafue (um dos maiores da África)</li>
+                    <li>Parque Nacional Lower Zambezi (paisagens deslumbrantes)</li>
+                    <li>Área de Gerenciamento de Caça Liuwa Plain (grande migração de gnus)</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/zambia-elephants.webp" alt="Elefantes" loading="lazy">
+                    <img src="imagens/zambia-lions.webp" alt="Leões" loading="lazy">
+                    <img src="imagens/zambia-birds.webp" alt="Pássaros" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Flora -->
+            <div id="flora" class="tab-content">
+                <h2 class="section-title">Flora da Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Das florestas de miombo às margens do Zambeze, a Zâmbia possui uma diversidade vegetal que sustenta seus ecossistemas únicos.</p>
+                </div>
+                <p>A vegetação da Zâmbia é dominada por florestas de miombo, que cobrem cerca de 50% do país. Estas florestas são caracterizadas por árvores do gênero Brachystegia, que perdem suas folhas na estação seca.</p>
+                <img src="imagens/miombo-forest.webp" alt="Floresta de miombo" class="content-image" loading="lazy">
+                <p class="image-caption">Floresta de miombo, ecossistema dominante na Zâmbia</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-tree"></i> Símbolo Natural</h3>
+                    <p>A árvore sausage (Kigelia africana), com seus frutos em forma de salsicha, é uma das espécies mais icônicas da Zâmbia.</p>
+                </div>
+                <p>Principais biomas vegetais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Florestas de miombo (predominantes no centro e norte)</li>
+                    <li>Savanas (áreas mais secas do sul)</li>
+                    <li>Florestas de mopane (Vale do Zambeze)</li>
+                    <li>Zonas úmidas (ao longo dos rios e lagos)</li>
+                    <li>Florestas perenes (áreas montanhosas)</li>
+                </ul>
+                </p>
+                <p>A flor nacional da Zâmbia é a Bougainvillea, que cresce abundantemente em todo o país, especialmente nas áreas urbanas.</p>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura Zambiana</h2>
+                <div class="intro-box">
+                    <p>Com mais de 70 grupos étnicos, a Zâmbia possui uma cultura rica e diversificada, expressa em sua música, dança e tradições.</p>
+                </div>
+                <p>A cultura zambiana é centrada na família e na comunidade, com valores de respeito pelos mais velhos e trabalho coletivo. O país tem sete principais línguas regionais além do inglês, que é a língua oficial.</p>
+                <img src="imagens/zambian-dance.webp" alt="Dança tradicional" class="content-image" loading="lazy">
+                <p class="image-caption">Dança tradicional do povo Bemba</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>A cerimônia Kuomboka do povo Lozi, que marca a migração anual do rei para terras mais altas durante as cheias, é um dos eventos culturais mais importantes.</p>
+                </div>
+                <p>A culinária zambiana é baseada em:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Nshima (mingau de farinha de milho, alimento básico)</li>
+                    <li>Ifisashi (vegetais com amendoim)</li>
+                    <li>Kapenta (pequenos peixes secos do Lago Tanganyika)</li>
+                    <li>Frango grelhado (popular em todo o país)</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Diversidade -->
+            <div id="diversidade" class="tab-content">
+                <h2 class="section-title">Diversidade da Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Com uma população de mais de 70 grupos étnicos, a Zâmbia é um país de grande diversidade cultural e religiosa.</p>
+                </div>
+                <p>A Zâmbia tem cerca de 18 milhões de habitantes, pertencentes a mais de 70 grupos étnicos, sendo os principais os Bemba, Tonga, Lozi e Nyanja. Apesar desta diversidade, o país é conhecido por sua estabilidade e harmonia social.</p>
+                <img src="imagens/zambian-village.webp" alt="Vila tradicional" class="content-image" loading="lazy">
+                <p class="image-caption">Vila tradicional mostrando o modo de vida rural</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-users"></i> Curiosidade Cultural</h3>
+                    <p>A Zâmbia foi declarada oficialmente uma "Nação Cristã" em sua constituição de 1996, embora garanta liberdade religiosa a todos.</p>
+                </div>
+                <p>Religiões na Zâmbia:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cristianismo (95%, maioria protestante)</li>
+                    <li>Religiões tradicionais africanas (4%)</li>
+                    <li>Islamismo e outras (1%)</li>
+                </ul>
+                </p>
+                <p>A Zâmbia é conhecida por sua política de "Uma Zâmbia, Uma Nação", que promove a unidade nacional acima das identidades étnicas.</p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo na Zâmbia</h2>
+                <div class="intro-box">
+                    <p>Das majestosas Cataratas Vitória aos safáris de classe mundial, a Zâmbia oferece experiências turísticas inesquecíveis.</p>
+                </div>
+                <p>A Zâmbia é um dos melhores destinos da África para safáris a pé e experiências de natureza autênticas. As Cataratas Vitória, uma das Sete Maravilhas Naturais do Mundo, são o principal atrativo, mas o país tem muito mais a oferecer.</p>
+                <img src="imagens/victoria-falls-bridge.webp" alt="Ponte das Cataratas Vitória" class="content-image" loading="lazy">
+                <p class="image-caption">Ponte das Cataratas Vitória, ligando a Zâmbia ao Zimbábue</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Destaque Turístico</h3>
+                    <p>A Devil's Pool, uma piscina natural na beira das Cataratas Vitória, permite nadar literalmente na borda da cachoeira durante a estação seca.</p>
+                </div>
+                <p>Principais atrações turísticas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cataratas Vitória (uma das maiores cachoeiras do mundo)</li>
+                    <li>Parque Nacional South Luangwa (melhor safári a pé da África)</li>
+                    <li>Parque Nacional Lower Zambezi (paisagens deslumbrantes)</li>
+                    <li>Lago Kariba (cruzeiros e pesca esportiva)</li>
+                    <li>Liuwa Plain (grande migração de gnus)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar a Zâmbia?</h3>
+                    <p>Descubra pacotes de viagem exclusivos para conhecer as maravilhas deste país incrível.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados pela Zâmbia e dedicados a compartilhar a beleza e cultura deste incrível país com o mundo.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> zambiatourism@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Zâmbia - Terra das Cataratas Vitória. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

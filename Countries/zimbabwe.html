@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimbábue - Terra de Maravilhas Naturais</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/z1.webp" alt="Cataratas Vitória no Zimbábue" class="content-image" loading="lazy">
+            <img src="../imagens/z2.webp" alt="Grande Zimbábue" class="content-image" loading="lazy">
+            <img src="../imagens/z3.webp" alt="Elefantes em Hwange" class="content-image" loading="lazy">
+            <img src="../imagens/z5.webp" alt="Pedras Equilibradas" class="content-image" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>ZIMBÁBUE</h1>
+            <p>Descubra um país de paisagens espetaculares, vida selvagem abundante e herança cultural rica</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="flora">Flora</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="diversidade">Diversidade</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 10 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Da antiga civilização do Grande Zimbábue à nação moderna, o país tem uma história fascinante que remonta a mais de mil anos.</p>
+                </div>
+                <p>O Zimbábue foi o local do império Monomotapa e do lendário Grande Zimbábue, um impressionante complexo de pedra construído entre os séculos XI e XV. Os britânicos colonizaram a área no século XIX, nomeando-a Rodésia.</p>
+                <img src="../imagens/Zimbabwe2.webp" alt="Ruínas do Grande Zimbábue" class="content-image" loading="lazy">
+                <p class="image-caption">Ruínas do Grande Zimbábue, Patrimônio Mundial da UNESCO</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>O nome "Zimbábue" vem de "dzimba dza mabwe", que significa "grandes casas de pedra" na língua shona, referindo-se ao antigo reino.</p>
+                </div>
+                <p>O país conquistou a independência em 1980 após uma longa guerra de libertação, com Robert Mugabe como primeiro-ministro. Em 2017, após 37 anos no poder, Mugabe foi deposto em um golpe militar.</p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Marcos Históricos</h3>
+                <div class="gallery">
+                    <img src="imagens/independence-celebration.webp" alt="Celebração da Independência" loading="lazy">
+                    <img src="imagens/harare-city.webp" alt="Cidade de Harare" loading="lazy">
+                    <img src="imagens/zimbabwe-flag.webp" alt="Bandeira do Zimbábue" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Com paisagens variadas que incluem montanhas, planaltos e o majestoso rio Zambeze, o Zimbábue é um país de beleza natural impressionante.</p>
+                </div>
+                <p>O Zimbábue é um país sem litoral no sul da África, fazendo fronteira com África do Sul, Botsuana, Zâmbia e Moçambique. O país é predominantemente composto por planaltos, com uma altitude média de 1.200 metros.</p>
+                <img src="imagens/zimbabwe-map.webp" alt="Mapa do Zimbábue" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a diversidade geográfica do Zimbábue</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>As Cataratas Vitória, compartilhadas com a Zâmbia, são duas vezes mais altas que as Cataratas do Niágara e uma das Sete Maravilhas Naturais do Mundo.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cataratas Vitória (Mosi-oa-Tunya - "A Fumaça que Trona")</li>
+                    <li>Rio Zambeze (quarto maior rio da África)</li>
+                    <li>Montes Inyangani (ponto mais alto com 2.592m)</li>
+                    <li>Lago Kariba (um dos maiores lagos artificiais do mundo)</li>
+                    <li>Pedras Equilibradas (formações graníticas icônicas)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Qual é o significado de "Mosi-oa-Tunya", o nome local das Cataratas Vitória?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Água que Canta</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">A Fumaça que Trona</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Rio dos Deuses</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Com vastos recursos naturais e um setor agrícola tradicionalmente forte, a economia do Zimbábue tem enfrentado desafios e oportunidades.</p>
+                </div>
+                <p>O Zimbábue possui uma das economias mais diversificadas da África Austral, com setores importantes na mineração, agricultura e turismo. O país tem grandes reservas de platina, diamantes e ouro, além de terras agrícolas férteis.</p>
+                <img src="imagens/zimbabwe-farming.webp" alt="Agricultura no Zimbábue" class="content-image" loading="lazy">
+                <p class="image-caption">Campos de tabaco, um dos principais produtos de exportação</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>O Zimbábue já foi chamado de "Celeiro da África" por sua produção agrícola e ainda é um dos maiores exportadores de tabaco do continente.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Mineração (platina, diamantes, ouro, carvão)</li>
+                    <li>Agricultura (tabaco, algodão, milho)</li>
+                    <li>Turismo (Cataratas Vitória, safáris)</li>
+                    <li>Manufatura (têxteis, produtos químicos)</li>
+                    <li>Serviços financeiros</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades no Zimbábue?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado em transformação.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Com parques nacionais bem preservados, o Zimbábue oferece alguns dos melhores encontros com vida selvagem da África.</p>
+                </div>
+                <p>O Zimbábue é um dos melhores destinos africanos para safáris, com populações saudáveis de elefantes, leões, leopardos, rinocerontes e búfalos. O Parque Nacional Hwange tem uma das maiores concentrações de elefantes do continente.</p>
+                <img src="imagens/hwange-wildlife.webp" alt="Vida selvagem em Hwange" class="content-image" loading="lazy">
+                <p class="image-caption">Elefantes no Parque Nacional Hwange</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>O Zimbábue tem um dos programas de conservação de rinocerontes mais bem-sucedidos da África, com populações estáveis de rinocerontes negros e brancos.</p>
+                </div>
+                <p>Principais áreas de conservação:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Parque Nacional Hwange (maior reserva do país)</li>
+                    <li>Parque Nacional Mana Pools (Patrimônio Mundial da UNESCO)</li>
+                    <li>Parque Nacional Matobo (proteção de rinocerontes)</li>
+                    <li>Área de Safari Gonarezhou (parte do Grande Limpopo Transfrontier Park)</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/zim-lions.webp" alt="Leões" loading="lazy">
+                    <img src="imagens/zim-rhinos.webp" alt="Rinocerontes" loading="lazy">
+                    <img src="imagens/zim-birds.webp" alt="Pássaros" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Flora -->
+            <div id="flora" class="tab-content">
+                <h2 class="section-title">Flora do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Das florestas de mopane às savanas de acácias, o Zimbábue possui uma diversidade vegetal que sustenta seus ecossistemas únicos.</p>
+                </div>
+                <p>A vegetação do Zimbábue varia de florestas densas no leste a savanas arbustivas no oeste. O mopane é uma das árvores mais características, dominando grandes áreas do país e fornecendo alimento para elefantes e lagartas comestíveis.</p>
+                <img src="imagens/mopane-forest.webp" alt="Floresta de mopane" class="content-image" loading="lazy">
+                <p class="image-caption">Floresta de mopane, ecossistema característico</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-tree"></i> Símbolo Natural</h3>
+                    <p>A árvore flame (Spathodea campanulata), com suas flores vermelhas vibrantes, é uma das espécies mais icônicas do Zimbábue.</p>
+                </div>
+                <p>Principais biomas vegetais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Florestas de mopane (predominantes no sul e oeste)</li>
+                    <li>Savanas de miombo (centro e norte do país)</li>
+                    <li>Florestas montanhosas (Montes Inyangani)</li>
+                    <li>Vegetação ribeirinha (ao longo do Zambeze e outros rios)</li>
+                    <li>Pradarias (em áreas de conservação)</li>
+                </ul>
+                </p>
+                <p>A flor nacional do Zimbábue é a Gloriosa (Gloriosa superba), uma trepadeira com flores vermelhas e amarelas que aparece nas notas do dólar zimbabuano.</p>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Com uma herança que remonta ao Grande Zimbábue, a cultura zimbabuana é rica em tradições, música e arte.</p>
+                </div>
+                <p>A cultura do Zimbábue é predominantemente influenciada pelos povos Shona e Ndebele, os dois maiores grupos étnicos. A escultura em pedra-sabão é uma das expressões artísticas mais conhecidas internacionalmente.</p>
+                <img src="../imagens/Zimbabwe4.webp" alt="Escultura em pedra" class="content-image" loading="lazy">
+                <p class="image-caption">Escultura em pedra-sabão, arte tradicional zimbabuana</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>O mbira, instrumento musical tradicional feito de lâminas de metal presas a uma caixa de ressonância, é considerado patrimônio cultural e foi popularizado mundialmente por músicos como Thomas Mapfumo.</p>
+                </div>
+                <p>A culinária zimbabuana é baseada em:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Sadza (mingau de farinha de milho, alimento básico)</li>
+                    <li>Nyama (carne, geralmente bovina ou de cabrito)</li>
+                    <li>Mopane worms (lagartas comestíveis do mopane)</li>
+                    <li>Maputi (pipoca tradicional)</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Diversidade -->
+            <div id="diversidade" class="tab-content">
+                <h2 class="section-title">Diversidade do Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Com uma população de múltiplas etnias e credos, o Zimbábue é um país de grande diversidade cultural.</p>
+                </div>
+                <p>O Zimbábue tem cerca de 16 milhões de habitantes, sendo os Shona (80%) e Ndebele (15%) os maiores grupos étnicos. O país também tem pequenas comunidades de europeus, asiáticos e mestiços, principalmente nas áreas urbanas.</p>
+                <img src="imagens/zim-village.webp" alt="Vila tradicional" class="content-image" loading="lazy">
+                <p class="image-caption">Vila tradicional mostrando o modo de vida rural</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-users"></i> Curiosidade Cultural</h3>
+                    <p>O Zimbábue tem uma das taxas de alfabetização mais altas da África, estimada em mais de 90%, resultado de investimentos em educação após a independência.</p>
+                </div>
+                <p>Religiões no Zimbábue:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cristianismo (85%, maioria protestante)</li>
+                    <li>Religiões tradicionais africanas (10%)</li>
+                    <li>Islamismo e outras (5%)</li>
+                </ul>
+                </p>
+                <p>O Zimbábue tem 16 línguas oficiais, refletindo sua diversidade étnica, com o inglês, shona e ndebele sendo as mais faladas.</p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo no Zimbábue</h2>
+                <div class="intro-box">
+                    <p>Das espetaculares Cataratas Vitória aos safáris de classe mundial, o Zimbábue oferece experiências turísticas inesquecíveis.</p>
+                </div>
+                <p>O Zimbábue é um dos principais destinos turísticos da África Austral, conhecido por suas paisagens deslumbrantes, vida selvagem abundante e locais históricos fascinantes. As Cataratas Vitória são o principal atrativo, mas o país tem muito mais a oferecer.</p>
+                <img src="imagens/victoria-falls-rainbow.webp" alt="Arco-íris nas Cataratas" class="content-image" loading="lazy">
+                <p class="image-caption">Arco-íris nas Cataratas Vitória, um espetáculo natural</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Destaque Turístico</h3>
+                    <p>O Parque Nacional Mana Pools, Patrimônio Mundial da UNESCO, oferece alguns dos melhores safáris a pé da África, com encontros próximos com elefantes e outros animais selvagens.</p>
+                </div>
+                <p>Principais atrações turísticas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cataratas Vitória (uma das Sete Maravilhas Naturais)</li>
+                    <li>Parque Nacional Hwange (maior reserva do país)</li>
+                    <li>Parque Nacional Mana Pools (safáris a pé excepcionais)</li>
+                    <li>Grande Zimbábue (ruínas históricas impressionantes)</li>
+                    <li>Matobo Hills (paisagens de pedras equilibradas)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar o Zimbábue?</h3>
+                    <p>Descubra pacotes de viagem exclusivos para conhecer as maravilhas deste país incrível.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados pelo Zimbábue e dedicados a compartilhar a beleza e cultura deste incrível país com o mundo.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> zimbabwetourism@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+            
+                </div>
+            </div>
+            
+          
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Zimbábue - Terra de Maravilhas Naturais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

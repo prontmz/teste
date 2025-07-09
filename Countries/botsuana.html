@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botsuana - Joia da África Austral</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Carrossel -->
+    <div class="hero">
+        <div class="carousel">
+            <img src="../imagens/bo1.webp" alt="Delta do Okavango" loading="lazy">
+            <img src="../imagens/bo2.webp" alt="Elefantes em Chobe" loading="lazy">
+            <img src="../imagens/bo3.webp" alt="Deserto do Kalahari" loading="lazy">
+            <img src="../imagens/bo4.webp" alt="Salinas de Makgadikgadi" loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <h1>BOTSUANA</h1>
+            <p>Descubra a joia da África Austral, onde a natureza selvagem e a cultura tradicional se encontram</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item active" data-tab="historia">História</div>
+            <div class="nav-item" data-tab="geografia">Geografia</div>
+            <div class="nav-item" data-tab="economia">Economia</div>
+            <div class="nav-item" data-tab="fauna">Fauna</div>
+            <div class="nav-item" data-tab="flora">Flora</div>
+            <div class="nav-item" data-tab="cultura">Cultura</div>
+            <div class="nav-item" data-tab="diversidade">Diversidade</div>
+            <div class="nav-item" data-tab="turismo">Turismo</div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-section">
+            <div class="reading-time">
+                <i class="far fa-clock"></i> Tempo estimado de leitura: 10 minutos
+            </div>
+
+            <!-- História -->
+            <div id="historia" class="tab-content active">
+                <h2 class="section-title">História de Botsuana</h2>
+                <div class="intro-box">
+                    <p>De antigos reinos africanos a uma das democracias mais estáveis da África, Botsuana tem uma história notável.</p>
+                </div>
+                <p>A região do atual Botsuana foi habitada pelo povo San há milhares de anos. No século XIII, chegaram os povos Tswana, que estabeleceram reinos poderosos. No século XIX, o país tornou-se protetorado britânico como Bechuanalândia.</p>
+                <img src="imagens/khama-family.webp" alt="Família Khama" class="content-image" loading="lazy">
+                <p class="image-caption">Sir Seretse Khama, primeiro presidente de Botsuana</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-lightbulb"></i> Você sabia?</h3>
+                    <p>Botsuana é uma das poucas nações africanas que nunca sofreu um golpe de estado desde sua independência em 1966.</p>
+                </div>
+                <p>Botsuana conquistou a independência pacificamente em 1966, sob a liderança de Sir Seretse Khama. Desde então, o país tem sido um modelo de democracia e desenvolvimento na África, apesar de começar como um dos países mais pobres do mundo.</p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Marcos Históricos</h3>
+                <div class="gallery">
+                    <img src="imagens/independence-monument.webp" alt="Monumento da Independência" loading="lazy">
+                    <img src="imagens/gaborone-city.webp" alt="Cidade de Gaborone" loading="lazy">
+                    <img src="imagens/botswana-flag.webp" alt="Bandeira de Botsuana" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Geografia -->
+            <div id="geografia" class="tab-content">
+                <h2 class="section-title">Geografia de Botsuana</h2>
+                <div class="intro-box">
+                    <p>Do majestoso Delta do Okavango ao vasto Deserto do Kalahari, Botsuana possui algumas das paisagens mais impressionantes da África.</p>
+                </div>
+                <p>Botsuana é um país sem litoral no sul da África, fazendo fronteira com África do Sul, Namíbia, Zâmbia e Zimbábue. Cerca de 70% do país é coberto pelo Deserto do Kalahari, mas também possui o incrível Delta do Okavango, o maior delta interior do mundo.</p>
+                <img src="imagens/botswana-map.webp" alt="Mapa de Botsuana" class="content-image" loading="lazy">
+                <p class="image-caption">Mapa mostrando a diversidade geográfica de Botsuana</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-mountain"></i> Destaque Geográfico</h3>
+                    <p>O Delta do Okavango é o único delta interior do mundo que não deságua no mar, criando um ecossistema único que atrai animais de toda a região.</p>
+                </div>
+                <p>Principais características geográficas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Delta do Okavango (Patrimônio Mundial da UNESCO)</li>
+                    <li>Deserto do Kalahari (cobre 70% do país)</li>
+                    <li>Salinas de Makgadikgadi (uma das maiores do mundo)</li>
+                    <li>Rio Chobe (fronteira com a Namíbia)</li>
+                    <li>Colinas Tsodilo (Patrimônio Mundial com arte rupestre)</li>
+                </ul>
+                </p>
+                <div class="quiz-container">
+                    <h3>Teste Seu Conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Qual é a característica única do Delta do Okavango?</p>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">É o maior delta do mundo</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, true)">É um delta interior que não chega ao mar</button>
+                        <button class="quiz-answer" onclick="checkAnswer(this, false)">Tem água salgada</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economia -->
+            <div id="economia" class="tab-content">
+                <h2 class="section-title">Economia de Botsuana</h2>
+                <div class="intro-box">
+                    <p>De um dos países mais pobres do mundo a uma das economias de mais rápido crescimento, a história econômica de Botsuana é inspiradora.</p>
+                </div>
+                <p>Botsuana transformou-se de um dos países mais pobres do mundo na independência para uma economia de renda média-alta, graças à descoberta de diamantes e à boa governança. O país é o maior produtor mundial de diamantes por valor.</p>
+                <img src="imagens/diamond-mine.webp" alt="Minas de diamantes" class="content-image" loading="lazy">
+                <p class="image-caption">Mineração de diamantes, base da economia botsuanesa</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-chart-line"></i> Dado Econômico</h3>
+                    <p>Botsuana tem a classificação de crédito mais alta da África e é considerado um dos países menos corruptos do continente.</p>
+                </div>
+                <p>Principais setores econômicos:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Mineração (diamantes, cobre, níquel)</li>
+                    <li>Turismo (safáris de luxo e vida selvagem)</li>
+                    <li>Pecuária (principalmente gado bovino)</li>
+                    <li>Serviços financeiros (em crescimento)</li>
+                    <li>Agricultura (limitada devido ao clima árido)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Interessado em oportunidades em Botsuana?</h3>
+                    <p>Conheça os setores em crescimento e as oportunidades de investimento neste mercado estável.</p>
+                    <a href="#" class="cta-button">SAIBA MAIS</a>
+                </div>
+            </div>
+
+            <!-- Fauna -->
+            <div id="fauna" class="tab-content">
+                <h2 class="section-title">Fauna de Botsuana</h2>
+                <div class="intro-box">
+                    <p>Com algumas das maiores populações de vida selvagem da África, Botsuana é um paraíso para os amantes da natureza.</p>
+                </div>
+                <p>Botsuana abriga as maiores populações de elefantes da África, com estimativas de mais de 130.000 indivíduos. O país também tem populações saudáveis de leões, leopardos, chitas, rinocerontes e inúmeras espécies de antílopes e aves.</p>
+                <img src="imagens/okavango-wildlife.webp" alt="Vida selvagem no Okavango" class="content-image" loading="lazy">
+                <p class="image-caption">Elefantes no Delta do Okavango, um dos melhores lugares para observá-los</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-paw"></i> Curiosidade Animal</h3>
+                    <p>O Delta do Okavango tem uma das maiores densidades de leões da África, com prides que se adaptaram a caçar em ambientes aquáticos.</p>
+                </div>
+                <p>Principais áreas de conservação:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Delta do Okavango (Patrimônio Mundial da UNESCO)</li>
+                    <li>Parque Nacional Chobe (maior concentração de elefantes)</li>
+                    <li>Reserva de Caça Moremi (melhor do Okavango para safáris)</li>
+                    <li>Deserto do Kalahari (adaptações únicas da vida selvagem)</li>
+                    <li>Salinas de Makgadikgadi (migrações de zebras)</li>
+                </ul>
+                </p>
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Vida Selvagem</h3>
+                <div class="gallery">
+                    <img src="imagens/botswana-lions.webp" alt="Leões" loading="lazy">
+                    <img src="imagens/botswana-birds.webp" alt="Pássaros" loading="lazy">
+                    <img src="imagens/botswana-rhinos.webp" alt="Rinocerontes" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Flora -->
+            <div id="flora" class="tab-content">
+                <h2 class="section-title">Flora de Botsuana</h2>
+                <div class="intro-box">
+                    <p>Das árvores majestosas do Okavango às plantas resistentes do Kalahari, a flora de Botsuana é adaptada a condições extremas.</p>
+                </div>
+                <p>A vegetação de Botsuana varia desde as florestas de acácias e figueiras no Delta do Okavango até as plantas resistentes à seca no Deserto do Kalahari. A árvore mopane é dominante em muitas áreas, fornecendo alimento para elefantes e habitat para inúmeras espécies.</p>
+                <img src="imagens/baobab-tree.webp" alt="Baobá" class="content-image" loading="lazy">
+                <p class="image-caption">Baobá, uma das árvores icônicas de Botsuana</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-tree"></i> Símbolo Natural</h3>
+                    <p>A árvore sausage (Kigelia africana), com seus frutos em forma de salsicha que podem pesar até 10kg, é uma das espécies mais curiosas do país.</p>
+                </div>
+                <p>Principais biomas vegetais:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Savanas arborizadas (Delta do Okavango e norte do país)</li>
+                    <li>Florestas de mopane (áreas mais secas)</li>
+                    <li>Deserto e semi-deserto (Kalahari)</li>
+                    <li>Salinas (Makgadikgadi e Ntwetwe Pans)</li>
+                    <li>Vegetação ribeirinha (ao longo dos rios permanentes)</li>
+                </ul>
+                </p>
+                <p>A flor nacional de Botsuana é a Kalahari Devil's Claw (Garra do Diabo), uma planta medicinal usada tradicionalmente pelo povo San.</p>
+            </div>
+
+            <!-- Cultura -->
+            <div id="cultura" class="tab-content">
+                <h2 class="section-title">Cultura de Botsuana</h2>
+                <div class="intro-box">
+                    <p>Com raízes profundas nas tradições Tswana e San, a cultura botsuanesa é rica e diversificada.</p>
+                </div>
+                <p>A cultura de Botsuana é centrada nos valores de Botho (humanidade), democracia e respeito pela natureza. O país tem dois principais grupos étnicos: os Tswana (maioria) e os San (Bosquímanos), um dos povos mais antigos da Terra.</p>
+                <img src="imagens/san-bushmen.webp" alt="Povo San" class="content-image" loading="lazy">
+                <p class="image-caption">Povo San, os primeiros habitantes da África Austral</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-music"></i> Patrimônio Cultural</h3>
+                    <p>A música e dança tradicional Setswana, especialmente o estilo "Phathisi", é uma expressão cultural vibrante, muitas vezes apresentada em cerimônias importantes.</p>
+                </div>
+                <p>A culinária botsuanesa é baseada em:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Pap (mingau de farinha de milho, similar ao sadza)</li>
+                    <li>Seswaa (carne de cabrito ou bovina cozida e desfiada)</li>
+                    <li>Morogo (vegetais de folhas verdes selvagens)</li>
+                    <li>Dikgobe (feijão e milho cozidos juntos)</li>
+                </ul>
+                </p>
+                <div class="social-share">
+                    <span>Compartilhe:</span>
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Diversidade -->
+            <div id="diversidade" class="tab-content">
+                <h2 class="section-title">Diversidade de Botsuana</h2>
+                <div class="intro-box">
+                    <p>Embora relativamente homogêneo, Botsuana possui uma diversidade cultural interessante entre seus principais grupos étnicos.</p>
+                </div>
+                <p>Botsuana tem cerca de 2,3 milhões de habitantes, com os Tswana representando cerca de 79% da população. Outros grupos incluem os Kalanga (11%), Basarwa (San, 3%), e pequenas comunidades de europeus e asiáticos.</p>
+                <img src="imagens/botswana-village.webp" alt="Vila tradicional" class="content-image" loading="lazy">
+                <p class="image-caption">Vila tradicional Tswana com arquitetura característica</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-users"></i> Curiosidade Cultural</h3>
+                    <p>Botsuana tem uma das menores densidades populacionais do mundo, com apenas cerca de 4 pessoas por quilômetro quadrado.</p>
+                </div>
+                <p>Religiões em Botsuana:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Cristianismo (80%, maioria protestante)</li>
+                    <li>Religiões tradicionais africanas (20%)</li>
+                </ul>
+                </p>
+                <p>O país tem duas línguas oficiais: o inglês (usado nos negócios e governo) e o Setswana (falado pela maioria da população).</p>
+            </div>
+
+            <!-- Turismo -->
+            <div id="turismo" class="tab-content">
+                <h2 class="section-title">Turismo em Botsuana</h2>
+                <div class="intro-box">
+                    <p>Do luxuoso safári no Okavango à imensidão do Kalahari, Botsuana oferece experiências turísticas exclusivas.</p>
+                </div>
+                <p>Botsuana é conhecida por seu turismo de alto valor e baixo impacto, focando em experiências exclusivas em meio à natureza intocada. O país é um dos melhores destinos do mundo para safáris de luxo e observação de vida selvagem.</p>
+                <img src="imagens/okavango-mokoro.webp" alt="Mokoro no Okavango" class="content-image" loading="lazy">
+                <p class="image-caption">Passeio de mokoro (canoa tradicional) no Delta do Okavango</p>
+                <div class="fact-box">
+                    <h3><i class="fas fa-umbrella-beach"></i> Destaque Turístico</h3>
+                    <p>Botsuana é pioneira no conceito de "safári de luxo", com acampamentos exclusivos que oferecem conforto sofisticado em meio ao deserto e áreas selvagens.</p>
+                </div>
+                <p>Principais atrações turísticas:
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                    <li>Delta do Okavango (Patrimônio Mundial da UNESCO)</li>
+                    <li>Parque Nacional Chobe (famosa por seus elefantes)</li>
+                    <li>Deserto do Kalahari (paisagens impressionantes e cultura San)</li>
+                    <li>Salinas de Makgadikgadi (uma das maiores do mundo)</li>
+                    <li>Colinas Tsodilo (arte rupestre com mais de 4.500 pinturas)</li>
+                </ul>
+                </p>
+                <div class="cta-box">
+                    <h3>Pronto para explorar Botsuana?</h3>
+                    <p>Descubra pacotes de viagem exclusivos para conhecer as maravilhas deste país único.</p>
+                    <a href="#" class="cta-button">VER OPÇÕES DE VIAGEM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Somos apaixonados por Botsuana e dedicados a compartilhar a beleza e cultura deste incrível país com o mundo.</p>
+                <div class="privacy-links">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#flora">Flora</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> botswanatourism@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maputo, mocambique</p>
+                    
+                </div>
+            </div>
+            
+        
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Botsuana - Joia da África Austral. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
