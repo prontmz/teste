@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mapeamento de países - ATUALIZE COM SEUS CAMINHOS REAIS
     const countryPages = {
         // Africa AUSTRAL:
-        'angola': 'Countries/angola.html',
-        'Angola':'Countries/Angola.html',
+        'angola':'Countries/Angola.html',
         'áfrica do sul': 'Countries/africa do sul.html',
         'botswana':'Countries/Botswana.html',
         'Congo':'Countries/Republica Democratica do Congo.html ',
