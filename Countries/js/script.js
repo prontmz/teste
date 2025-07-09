@@ -98,4 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
         img.addEventListener('mouseenter', handleImageHover);
         img.addEventListener('mouseleave', handleImageHover);
     });
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navContainer = document.querySelector('.nav-container');
+    
+    if (menuToggle && navContainer) {
+        menuToggle.addEventListener('click', function() {
+            navContainer.classList.toggle('active');
+        });
+    }
 });
